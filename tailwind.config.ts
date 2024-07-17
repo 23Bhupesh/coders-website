@@ -1,3 +1,4 @@
+import { Lato, Poppins } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,9 +10,16 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'custom-bg': "url('/images/Background_Dusty_Texture.svg')",
+      },
+      fontFamily: {
+        lemonmilk: ['Lemon Milk', 'sans-serif'],
+        inter:['Inter', 'sans-serif'],
+        leckerli: ['Leckerli One', 'cursive'],
+        lato: ['Lato', 'sans-serif'],
+      },
+      letterSpacing: {
+        'extra-widest': '0.45em',
       },
     },
   },
