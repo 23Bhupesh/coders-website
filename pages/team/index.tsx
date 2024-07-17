@@ -3,6 +3,8 @@ import Team2023Data from "../(components)/Team2023Data";
 import ImgCard from "../(components)/ImgCard";
 import FacultyData from "../(components)/FacultyData";
 import FoundingTeamData from "../(components)/FoundingTeamData";
+import Image from "next/image";
+import Link from "next/link";
 
 const index = () => {
   return (
@@ -26,30 +28,66 @@ const index = () => {
         {/* images */}
         <div className="flex justify-center gap-7 my-10 items-center">
           <div className="flex flex-col gap-2">
-            <img src="images/harsh_img.svg" alt="" className="h-64 w-64" />
+            <Image
+              height={256}
+              width={256}
+              src="images/harsh_img.svg"
+              alt=""
+              className="h-64 w-64"
+            />
             <div className="flex flex-col items-center h-4">
               <p className="font-bold text-base my-1">Harsh Bhattad</p>
-              <a href="">
-                <img src="images/linkedin.svg" alt="" className="h-5 w-5" />
-              </a>
+              <Link href="">
+                <Image
+                  src="images/linkedin.svg"
+                  height={20}
+                  width={20}
+                  alt=""
+                  className="h-5 w-5"
+                />
+              </Link>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <img src="images/preteek_img.svg" alt="" className="h-80 w-80" />
+            <Image
+              src="images/preteek_img.svg"
+              height={320}
+              width={320}
+              alt=""
+              className="h-80 w-80"
+            />
             <div className="flex flex-col items-center h-4">
               <p className="font-bold text-base my-1">Prateek Meshram</p>
-              <a href="">
-                <img src="images/linkedin.svg" alt="" className="h-5 w-5" />
-              </a>
+              <Link href="">
+                <Image
+                  src="images/linkedin.svg"
+                  height={20}
+                  width={20}
+                  alt=""
+                  className="h-5 w-5"
+                />
+              </Link>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <img src="images/devarshi_img.svg" alt="" className="h-64 w-64" />
+            <Image
+              src="images/devarshi_img.svg"
+              height={256}
+              width={256}
+              alt=""
+              className="h-64 w-64"
+            />
             <div className="flex flex-col items-center h-4">
               <p className="font-bold text-base my-1">Devarshi Mahajan</p>
-              <a href="">
-                <img src="images/linkedin.svg" alt="" className="h-5 w-5" />
-              </a>
+              <Link href="">
+                <Image
+                  src="images/linkedin.svg"
+                  height={20}
+                  width={20}
+                  alt=""
+                  className="h-5 w-5"
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -58,39 +96,68 @@ const index = () => {
       {/* Faculty coordinators division */}
       <div className="w-full my-10">
         <div className="flex justify-center my-10">
-          <img src="images/heading_left_design.svg" alt="" className="mx-4" />
+          <Image
+            height={78}
+            width={59}
+            src="images/heading_left_design.svg"
+            alt=""
+            className="mx-4"
+          />
           <p className="font-bold text-6xl flex justify-center">
             faculty coordinators
           </p>
-          <img src="images/heading_right_design.svg" alt="" className="mx-4" />
+          <Image
+            height={78}
+            width={59}
+            src="images/heading_right_design.svg"
+            alt=""
+            className="mx-4"
+          />
         </div>
 
         {/* faculty images */}
-        <div className="flex justify-center gap-4 mt-20 mb-28">
-          {FacultyData.map((e) => (
-            <ImgCard
-              img={e.img}
-              name={e.name}
-              domain={e.domain}
-              linkedin={e.linkedin}
-            />
-          ))}
-        </div>
+        {Array.from({ length: 6 }, (_, rowIndex) => (
+          <div className="flex justify-center gap-4 " key={rowIndex}>
+            {FacultyData.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
+              (person, index) => (
+                <ImgCard
+                  key={index}
+                  img={person.img}
+                  name={person.name}
+                  domain={person.domain}
+                  linkedin={person.linkedin}
+                />
+              )
+            )}
+          </div>
+        ))}
       </div>
 
       {/* Team 2023 division*/}
-      <div className="flex justify-center my-20">
-        <img src="images/heading_left_design.svg" alt="" className="mx-4" />
+      <div className="flex justify-center mt-28">
+        <Image
+          height={78}
+          width={59}
+          src="images/heading_left_design.svg"
+          alt=""
+          className="mx-4"
+        />
         <p className="font-bold text-6xl flex justify-center">our team 2023</p>
-        <img src="images/heading_right_design.svg" alt="" className="mx-4" />
+        <Image
+          height={78}
+          width={59}
+          src="images/heading_right_design.svg"
+          alt=""
+          className="mx-4"
+        />
       </div>
 
       {/* Team Images */}
-      <div className="my-28">
+      <div className="my-10">
         {/* row_1 */}
         {/* <div className="flex gap-5 justify-center mb-10">
             {ImgCardData.slice(0, 5).map((e) => (
-              <ImgCard
+              <ImageCard
                 img={e.img}
                 name={e.name}
                 domain={e.domain}
@@ -102,7 +169,7 @@ const index = () => {
         {/* row_2 */}
         {/* <div className="flex gap-5 justify-center mb-10">
             {ImgCardData.slice(5, 10).map((e) => (
-              <ImgCard
+              <ImageCard
                 img={e.img}
                 name={e.name}
                 domain={e.domain}
@@ -114,7 +181,7 @@ const index = () => {
         {/* row_3 */}
         {/* <div className="flex gap-5 justify-center mb-10">
             {ImgCardData.slice(10, 15).map((e) => (
-              <ImgCard
+              <ImageCard
                 img={e.img}
                 name={e.name}
                 domain={e.domain}
@@ -126,7 +193,7 @@ const index = () => {
         {/* row_4 */}
         {/* <div className="flex gap-5 justify-center mb-10">
             {ImgCardData.slice(15, 20).map((e) => (
-              <ImgCard
+              <ImageCard
                 img={e.img}
                 name={e.name}
                 domain={e.domain}
@@ -138,7 +205,7 @@ const index = () => {
         {/* row_5 */}
         {/* <div className="flex gap-5 justify-center mb-10">
             {ImgCardData.slice(20, 25).map((e) => (
-              <ImgCard
+              <ImageCard
                 img={e.img}
                 name={e.name}
                 domain={e.domain}
@@ -150,7 +217,7 @@ const index = () => {
         {/* row_6 */}
         {/* <div className="flex gap-5 justify-center mb-10">
             {ImgCardData.slice(25, 29).map((e) => (
-              <ImgCard
+              <ImageCard
                 img={e.img}
                 name={e.name}
                 domain={e.domain}
@@ -176,13 +243,25 @@ const index = () => {
       </div>
 
       {/* Founding Team division */}
-      <div className="flex justify-center my-28 ">
-        <img src="images/heading_left_design.svg" alt="" className="mx-4" />
+      <div className="flex justify-center mt-28 ">
+        <Image
+          height={78}
+          width={59}
+          src="images/heading_left_design.svg"
+          alt=""
+          className="mx-4"
+        />
         <p className="font-bold text-6xl flex justify-center ">founding team</p>
-        <img src="images/heading_right_design.svg" alt="" className="mx-4" />
+        <Image
+          height={78}
+          width={59}
+          src="images/heading_right_design.svg"
+          alt=""
+          className="mx-4"
+        />
       </div>
-      <div className="my-20">
-      {Array.from({ length: 6 }, (_, rowIndex) => (
+      <div className="mt-10 mb-28">
+        {Array.from({ length: 6 }, (_, rowIndex) => (
           <div className="flex justify-center gap-4 mb-10" key={rowIndex}>
             {Team2023Data.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
               (person, index) => (

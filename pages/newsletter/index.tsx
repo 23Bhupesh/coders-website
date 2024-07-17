@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const index = () => {
@@ -18,7 +19,7 @@ const index = () => {
         </div>
         <div className='flex items-end'>
           <button className='h-14 w-20 rounded-sm border-2'>
-            <img src="images/arrow_button.svg" alt="Next" className='m-auto'/>
+            <Image height={0} width={0} src="images/arrow_button.svg" alt="Next" className='m-auto'/>
           </button>
         </div>
       </div>

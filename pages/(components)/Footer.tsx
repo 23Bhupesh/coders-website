@@ -8,6 +8,8 @@ import {
   faXTwitter,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -16,20 +18,20 @@ const Footer = () => {
 
       <div className="flex">
         <div className="mx-auto flex items-center">
-          <img src="images/collab_left.svg" alt="" />
+          <Image src="images/collab_left.svg" height={0} width={0} alt="" />
           <div className="h-6 w-52 flex items-center">
             <p className="font-inter font-normal text-xl align-middle mx-auto">
               Want to Collaborate?
             </p>
           </div>
-          <img src="images/collab_right.svg" alt="" />
+          <Image src="images/collab_right.svg" height={0} width={0} alt="" />
         </div>
       </div>
 
       {/*let's chat*/}
 
       <div className="flex my-12">
-        <p className="mx-auto font-inter font-semibold text-9xl">Let's Chat</p>
+        <p className="mx-auto font-inter font-semibold text-9xl">Let&apos;s Chat</p>
       </div>
 
       {/* contact us */}
@@ -45,7 +47,7 @@ const Footer = () => {
       <div className="px-10">
         <div className="flex items-center gap-2 mt-2">
           <div className="">
-            <img src="images/logo_navbar.svg" alt="Logo" />
+            <Image src="images/logo_navbar.svg" height={0} width={0} alt="Logo" />
           </div>
           <div>
             <p className="font-inter text-xs font-medium">CODERS.DYP</p>
@@ -69,24 +71,24 @@ const Footer = () => {
           {/* icons */}
 
           <div className="flex gap-2">
-            <a href="https://www.instagram.com/coders.dyp/" target="_blank" rel="noopener noreferrer">
-              <img src="images/instagram_icon.svg" alt="" className="h-12 w-12 hover:cursor-pointer" />
-            </a>
-            <a href="/" target="_blank" rel="noopener noreferrer">
-              <img src="images/twitter_icon.svg" alt="" className="h-12 w-12 hover:cursor-pointer" />
-            </a>
-            <a href="https://www.linkedin.com/company/codersdyp/" target="_blank" rel="noopener noreferrer">
-              <img src="images/linkedin_icon.svg" alt="" className="h-12 w-12 hover:cursor-pointer" />
-            </a>
-            <a href="https://chat.whatsapp.com/Dy1BGZyP3cUFTgE7ioUWVo" target="_blank" rel="noopener noreferrer">
-              <img src="images/whatsapp_icon.svg" alt="" className="h-12 w-12 hover:cursor-pointer" />
-            </a>
-            <a href="/" target="_blank" rel="noopener noreferrer">
-              <img src="images/youtube_icon.svg" alt="" className="h-12 w-12 hover:cursor-pointer border-[1.4px] border-[#E8E7EA] rounded-full" />
-            </a>
-            <a href="/" target="_blank" rel="noopener noreferrer">
-              <img src="images/spotify_icon.svg" alt="" className="h-12 w-12 hover:cursor-pointer" />
-            </a>
+            <Link href="https://www.instagram.com/coders.dyp/" target="_blank" rel="noopener noreferrer">
+              <Image src="images/instagram_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
+            </Link>
+            <Link href="/" target="_blank" rel="noopener noreferrer">
+              <Image src="images/twitter_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
+            </Link>
+            <Link href="https://www.linkedin.com/company/codersdyp/" target="_blank" rel="noopener noreferrer">
+              <Image src="images/linkedin_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
+            </Link>
+            <Link href="https://chat.whatsapp.com/Dy1BGZyP3cUFTgE7ioUWVo" target="_blank" rel="noopener noreferrer">
+              <Image src="images/whatsapp_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
+            </Link>
+            <Link href="/" target="_blank" rel="noopener noreferrer">
+              <Image src="images/youtube_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer border-[1.4px] border-[#E8E7EA] rounded-full" />
+            </Link>
+            <Link href="/" target="_blank" rel="noopener noreferrer">
+              <Image src="images/spotify_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
+            </Link>
           </div>
         </div>
 

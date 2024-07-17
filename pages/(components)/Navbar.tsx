@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -5,7 +7,7 @@ const Navbar = () => {
     <div className="text-white w-full h-20 flex justify-between px-10">
       <div className="flex items-center gap-2 mt-2">
         <div className="">
-          <img src="images/logo_navbar.svg" alt="Logo" />
+          <Image src="images/logo_navbar.svg" height={52} width={50} alt="Logo" />
         </div>
         <div>
           <p className="font-inter text-xs font-medium">CODERS.DYP</p>
@@ -14,18 +16,18 @@ const Navbar = () => {
 
       <div className="w-96 my-auto">
         <ul className="flex justify-between font-inter font-medium text-base">
-          <a href="/">
+          <Link href="/">
             <li>HOME</li>
-          </a>
-          <a href="team">
+          </Link>
+          <Link href="team">
             <li>TEAM</li>
-          </a>
-          <a href="events">
+          </Link>
+          <Link href="events">
             <li>EVENTS</li>
-          </a>
-          <a href="newsletter">
+          </Link>
+          <Link href="newsletter">
             <li>NEWSLETTER</li>
-          </a>
+          </Link>
         </ul>
       </div>
     </div>
