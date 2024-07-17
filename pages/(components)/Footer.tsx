@@ -47,7 +47,7 @@ const Footer = () => {
       <div className="px-10">
         <div className="flex items-center gap-2 mt-2">
           <div className="">
-            <Image src="images/logo_navbar.svg" height={0} width={0} alt="Logo" />
+            <Image src="images/logo_navbar.svg" height={52} width={50} alt="Logo" />
           </div>
           <div>
             <p className="font-inter text-xs font-medium">CODERS.DYP</p>

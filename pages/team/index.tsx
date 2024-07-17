@@ -1,8 +1,8 @@
 import React from "react";
-import Team2023Data from "../(components)/Team2023Data";
+import Team2023Data from "../../Team2023Data";
 import ImgCard from "../(components)/ImgCard";
-import FacultyData from "../(components)/FacultyData";
-import FoundingTeamData from "../(components)/FoundingTeamData";
+import FacultyData from "../../FacultyData";
+// import FoundingTeamData from "../(components)/FoundingTeamData";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -119,7 +119,7 @@ const index = () => {
         {Array.from({ length: 6 }, (_, rowIndex) => (
           <div className="flex justify-center gap-4 " key={rowIndex}>
             {FacultyData.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
-              (person, index) => (
+              (person : any, index : number) => (
                 <ImgCard
                   key={index}
                   img={person.img}
@@ -156,7 +156,7 @@ const index = () => {
       <div className="my-10">
         {/* row_1 */}
         {/* <div className="flex gap-5 justify-center mb-10">
-            {ImgCardData.slice(0, 5).map((e) => (
+            {ImgCardData.slice(0, 5).map((e : any) => (
               <ImageCard
                 img={e.img}
                 name={e.name}
@@ -168,7 +168,7 @@ const index = () => {
 
         {/* row_2 */}
         {/* <div className="flex gap-5 justify-center mb-10">
-            {ImgCardData.slice(5, 10).map((e) => (
+            {ImgCardData.slice(5, 10).map((e : any) => (
               <ImageCard
                 img={e.img}
                 name={e.name}
@@ -180,7 +180,7 @@ const index = () => {
 
         {/* row_3 */}
         {/* <div className="flex gap-5 justify-center mb-10">
-            {ImgCardData.slice(10, 15).map((e) => (
+            {ImgCardData.slice(10, 15).map((e : any) => (
               <ImageCard
                 img={e.img}
                 name={e.name}
@@ -192,7 +192,7 @@ const index = () => {
 
         {/* row_4 */}
         {/* <div className="flex gap-5 justify-center mb-10">
-            {ImgCardData.slice(15, 20).map((e) => (
+            {ImgCardData.slice(15, 20).map((e : any) => (
               <ImageCard
                 img={e.img}
                 name={e.name}
@@ -204,7 +204,7 @@ const index = () => {
 
         {/* row_5 */}
         {/* <div className="flex gap-5 justify-center mb-10">
-            {ImgCardData.slice(20, 25).map((e) => (
+            {ImgCardData.slice(20, 25).map((e : any) => (
               <ImageCard
                 img={e.img}
                 name={e.name}
@@ -216,7 +216,7 @@ const index = () => {
 
         {/* row_6 */}
         {/* <div className="flex gap-5 justify-center mb-10">
-            {ImgCardData.slice(25, 29).map((e) => (
+            {ImgCardData.slice(25, 29).map((e : any) => (
               <ImageCard
                 img={e.img}
                 name={e.name}
@@ -228,7 +228,7 @@ const index = () => {
         {Array.from({ length: 6 }, (_, rowIndex) => (
           <div className="flex justify-center gap-4 mb-10" key={rowIndex}>
             {Team2023Data.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
-              (person, index) => (
+              (person : any, index: number) => (
                 <ImgCard
                   key={index}
                   img={person.img}
@@ -264,7 +264,7 @@ const index = () => {
         {Array.from({ length: 6 }, (_, rowIndex) => (
           <div className="flex justify-center gap-4 mb-10" key={rowIndex}>
             {Team2023Data.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
-              (person, index) => (
+              (person : any, index : number) => (
                 <ImgCard
                   key={index}
                   img={person.img}
