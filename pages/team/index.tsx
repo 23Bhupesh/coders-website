@@ -1,10 +1,10 @@
 import React from "react";
 import Team2023Data from "../../Team2023Data";
-import ImgCard from "../(components)/ImgCard";
 import FacultyData from "../../FacultyData";
 // import FoundingTeamData from "../(components)/FoundingTeamData";
 import Image from "next/image";
 import Link from "next/link";
+import ImgCard from "@/components/ImgCard";
 
 const index = () => {
   return (
