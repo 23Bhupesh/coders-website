@@ -19,7 +19,7 @@ const index = () => {
         </div>
         <div className='flex items-end'>
           <button className='h-14 w-20 rounded-sm border-2'>
-            <Image height={0} width={0} src="images/arrow_button.svg" alt="Next" className='m-auto'/>
+            <Image height={14} width={32} src="images/arrow_button.svg" alt="Next" className='m-auto'/>
           </button>
         </div>
       </div>
