@@ -12,7 +12,7 @@ const index = () => {
       {/* headline div */}
       <div className="h-screen w-full flex justify-center items-center">
         <p className=" w-[74%] h-64 leading-tight text-center flex justify-center items-center font-bold text-8xl ">
-          PEOPLE HOW LEAD OUR COMMUNITY
+          PEOPLE WHO LEAD OUR COMMUNITY
         </p>
       </div>
 
