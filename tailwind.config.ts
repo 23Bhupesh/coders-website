@@ -17,9 +17,18 @@ const config: Config = {
         inter:['Inter', 'sans-serif'],
         leckerli: ['Leckerli One', 'cursive'],
         lato: ['Lato', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
       letterSpacing: {
         'extra-widest': '0.45em',
+      },keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        'scroll': 'scroll 20s linear infinite',
       },
     },
   },

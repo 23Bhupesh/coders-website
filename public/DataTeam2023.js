@@ -1,5 +1,5 @@
 
-const Team2023Data = [
+const DataTeam2023 = [
     {
         img: "/images/img_devarshi.svg",
         name: "Devarshi Mahajan",
@@ -175,4 +175,4 @@ const Team2023Data = [
         linkedin:""
     },
 ]
-export default Team2023Data
+export default DataTeam2023

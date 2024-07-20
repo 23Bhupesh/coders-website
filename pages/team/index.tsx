@@ -1,7 +1,6 @@
 import React from "react";
-import Team2023Data from "../../Team2023Data";
-import FacultyData from "../../FacultyData";
-// import FoundingTeamData from "../(components)/FoundingTeamData";
+import DataTeam2023 from "../../public/DataTeam2023";
+import DataFaculty from "../../public/DataFaculty";
 import Image from "next/image";
 import Link from "next/link";
 import ImgCard from "@/components/ImgCard";
@@ -118,7 +117,7 @@ const index = () => {
         {/* faculty images */}
         {Array.from({ length: 6 }, (_, rowIndex) => (
           <div className="flex justify-center gap-4 " key={rowIndex}>
-            {FacultyData.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
+            {DataFaculty.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
               (person : any, index : number) => (
                 <ImgCard
                   key={index}
@@ -227,7 +226,7 @@ const index = () => {
           </div> */}
         {Array.from({ length: 6 }, (_, rowIndex) => (
           <div className="flex justify-center gap-4 mb-10" key={rowIndex}>
-            {Team2023Data.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
+            {DataTeam2023.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
               (person : any, index: number) => (
                 <ImgCard
                   key={index}
@@ -263,7 +262,7 @@ const index = () => {
       <div className="mt-10 mb-28">
         {Array.from({ length: 6 }, (_, rowIndex) => (
           <div className="flex justify-center gap-4 mb-10" key={rowIndex}>
-            {Team2023Data.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
+            {DataTeam2023.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
               (person : any, index : number) => (
                 <ImgCard
                   key={index}

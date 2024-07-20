@@ -16,6 +16,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "FacultyData.js", "Team2023Data.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "public/FacultyData.js", "public/Team2023Data.js", "components/CircleAnimation.tsx"],
   "exclude": ["node_modules"]
 }

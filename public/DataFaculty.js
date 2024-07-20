@@ -1,5 +1,5 @@
 
-const FacultyData = [
+const DataFaculty = [
     {
         img: "/images/img_blank.png",
         name: "Amol Dhakne",
@@ -26,4 +26,4 @@ const FacultyData = [
     },
 ]
 
-export default FacultyData
+export default DataFaculty

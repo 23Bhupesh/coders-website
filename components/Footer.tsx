@@ -1,30 +1,21 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSpotify,
-  faYoutube,
-  faWhatsapp,
-  faInstagram,
-  faXTwitter,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full h-44 text-white">
+    <div className="w-full h-44 text-white mt-40">
       {/* want to collaborate */}
 
       <div className="flex">
         <div className="mx-auto flex items-center">
-          <Image src="images/collab_left.svg" height={0} width={0} alt="" />
+          <Image src="images/collab_left.svg" height={35} width={25} alt="" />
           <div className="h-6 w-52 flex items-center">
             <p className="font-inter font-normal text-xl align-middle mx-auto">
               Want to Collaborate?
             </p>
           </div>
-          <Image src="images/collab_right.svg" height={0} width={0} alt="" />
+          <Image src="images/collab_right.svg" height={35} width={25} alt="" />
         </div>
       </div>
 

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
- 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -29,4 +28,45 @@
   src: url('/fonts/LEMONMILK-Medium.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+.custom-disc-color li::marker {
+  color: #FF7E21;
+}
+
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999;
+}
+
+@keyframes scrollTopBottom {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes scrollBottomTop {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.animate-scrollTopBottom {
+  animation: scrollTopBottom 20s linear infinite;
+}
+
+.animate-scrollBottomTop {
+  animation: scrollBottomTop 20s linear infinite;
 }
