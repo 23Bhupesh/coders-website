@@ -22,7 +22,7 @@ const Footer = () => {
       {/*let's chat*/}
 
       <div className="flex md:my-12 lg:my-12 my-5">
-        <p className="mx-auto font-inter font-semibold md:text-9xl lg:text-9xl text-7xl">Let&apos;s Chat</p>
+        <p className="mx-auto font-inter font-semibold md:text-9xl lg:text-9xl text-6xl p-2">Let&apos;s Chat</p>
       </div>
 
       {/* contact us */}
@@ -65,9 +65,9 @@ const Footer = () => {
             <Link href="https://www.instagram.com/coders.dyp/" target="_blank" rel="noopener noreferrer">
               <Image src="images/instagram_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
             </Link>
-            <Link href="/" target="_blank" rel="noopener noreferrer">
+            {/* <Link href="/" target="_blank" rel="noopener noreferrer">
               <Image src="images/twitter_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
-            </Link>
+            </Link> */}
             <Link href="https://www.linkedin.com/company/codersdyp/" target="_blank" rel="noopener noreferrer">
               <Image src="images/linkedin_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
             </Link>
@@ -77,9 +77,9 @@ const Footer = () => {
             <Link href="/" target="_blank" rel="noopener noreferrer">
               <Image src="images/youtube_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer border-[1.4px] border-[#E8E7EA] rounded-full" />
             </Link>
-            <Link href="/" target="_blank" rel="noopener noreferrer">
+            {/* <Link href="/" target="_blank" rel="noopener noreferrer">
               <Image src="images/spotify_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
-            </Link>
+            </Link> */}
           </div>
         </div>
 
