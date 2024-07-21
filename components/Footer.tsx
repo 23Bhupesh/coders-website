@@ -85,11 +85,11 @@ const Footer = () => {
 
         {/* address */}
         <div className="md:text-right lg:text-right text-center font-inter font-normal lg:text-xl md:text-lg text-base lg:leading-6 md:leading-6">
-          <div className="md:h-20 lg:h-20 h-auto w-96 mx-auto md:my-auto lg:my-auto my-2">
+          <div className="md:h-20 lg:h-20 h-auto lg:w-96 md:w-96 w-auto mx-auto md:my-auto lg:my-auto my-2">
             D. Y. Patil Educational Complex, Akurdi, Nigdi, Pimpri-Chinchwad,
             Maharashtra ,411035
           </div>
-          <div className="my-3">
+          <div className="my-3 w-auto">
             coders.club@dypiemr.com
           </div>
           <div className="mt-2">
