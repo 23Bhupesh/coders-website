@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="flex">
         <div className="mx-auto flex items-center">
           <Image src="images/collab_left.svg" height={35} width={25} alt="" />
-          <div className="h-6 w-52 flex items-center">
+          <div className="h-6 md:w-52 lg:w-52 w-auto lg:px-0 md:px-0 px-1 flex items-center">
             <p className="font-inter font-normal md:text-xl lg:text-xl text-xs align-middle mx-auto">
               Want to Collaborate?
             </p>
