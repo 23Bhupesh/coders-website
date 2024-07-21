@@ -1,7 +1,4 @@
-import CircleAnimation from "@/components/CircleAnimation";
-import Footer from "@/components/Footer";
-import RecentEventLeft from "@/components/RecentEventLeft";
-import RecentEventRight from "@/components/RecentEventRight";
+
 import Image from "next/image";
 import React from "react";
 
@@ -46,7 +43,6 @@ const index = () => {
           </div>
         </div>
       </div>
-      <CircleAnimation />
     </div>
   );
 };

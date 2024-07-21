@@ -34,17 +34,6 @@
   color: #FF7E21;
 }
 
-.circle {
-  height: 20px;
-  width: 20px;
-  border-radius: 24px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 99999999;
-}
-
 @keyframes scrollTopBottom {
   0% {
     transform: translateY(0%);

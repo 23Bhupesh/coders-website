@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import CircleAnimation from "@/components/CircleAnimation";
 import RecentEventRight from "@/components/RecentEventRight";
 import RecentEventLeft from "@/components/RecentEventLeft";
 import GalleryImage from "@/components/GalleryImage";
@@ -11,8 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="text-white">
-      <CircleAnimation />
+    <div className="text-white pt-20">
       <div className=" h-screen w-full flex flex-col justify-center items-center">
         <p className="w-[67%] h-6 font-inter font-medium text-xl flex flex-col">
           Hello people!
@@ -93,7 +91,8 @@ export default function Home() {
 
       {/* Scrolling Divisions */}
       {/* Parent Div */}
-      <div className=" h-auto font-roboto">
+
+      {/* <div className=" h-auto font-roboto">
         <div className=" bg-[#E7E7E7] h-24 w-full items-center">
           <ul className="h-24 flex items-center font-normal text-3xl list-disc justify-between m-auto text-[#212121] custom-disc-color">
             <li>UI/UX</li>
@@ -113,7 +112,7 @@ export default function Home() {
             <li>START-UPS</li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
       {/* About us */}
       <div className="h-screen w-full text-white flex flex-col p-10">

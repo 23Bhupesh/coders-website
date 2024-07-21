@@ -7,7 +7,7 @@ import ImgCard from "@/components/ImgCard";
 
 const index = () => {
   return (
-    <div className="font-lemonmilk text-white">
+    <div className="font-lemonmilk text-white pt-20">
       {/* headline div */}
       <div className="h-screen w-full flex justify-center items-center">
         <p className=" w-[75%] h-64 leading-tight text-center flex justify-center items-center font-bold text-8xl ">
@@ -153,77 +153,6 @@ const index = () => {
 
       {/* Team Images */}
       <div className="my-10">
-        {/* row_1 */}
-        {/* <div className="flex gap-5 justify-center mb-10">
-            {ImgCardData.slice(0, 5).map((e : any) => (
-              <ImageCard
-                img={e.img}
-                name={e.name}
-                domain={e.domain}
-                linkedin={e.linkedin}
-              />
-            ))}
-          </div> */}
-
-        {/* row_2 */}
-        {/* <div className="flex gap-5 justify-center mb-10">
-            {ImgCardData.slice(5, 10).map((e : any) => (
-              <ImageCard
-                img={e.img}
-                name={e.name}
-                domain={e.domain}
-                linkedin={e.linkedin}
-              />
-            ))}
-          </div> */}
-
-        {/* row_3 */}
-        {/* <div className="flex gap-5 justify-center mb-10">
-            {ImgCardData.slice(10, 15).map((e : any) => (
-              <ImageCard
-                img={e.img}
-                name={e.name}
-                domain={e.domain}
-                linkedin={e.linkedin}
-              />
-            ))}
-          </div> */}
-
-        {/* row_4 */}
-        {/* <div className="flex gap-5 justify-center mb-10">
-            {ImgCardData.slice(15, 20).map((e : any) => (
-              <ImageCard
-                img={e.img}
-                name={e.name}
-                domain={e.domain}
-                linkedin={e.linkedin}
-              />
-            ))}
-          </div> */}
-
-        {/* row_5 */}
-        {/* <div className="flex gap-5 justify-center mb-10">
-            {ImgCardData.slice(20, 25).map((e : any) => (
-              <ImageCard
-                img={e.img}
-                name={e.name}
-                domain={e.domain}
-                linkedin={e.linkedin}
-              />
-            ))}
-          </div> */}
-
-        {/* row_6 */}
-        {/* <div className="flex gap-5 justify-center mb-10">
-            {ImgCardData.slice(25, 29).map((e : any) => (
-              <ImageCard
-                img={e.img}
-                name={e.name}
-                domain={e.domain}
-                linkedin={e.linkedin}
-              />
-            ))}
-          </div> */}
         {Array.from({ length: 6 }, (_, rowIndex) => (
           <div className="flex justify-center gap-4 mb-10" key={rowIndex}>
             {DataTeam2023.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
