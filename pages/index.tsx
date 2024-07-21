@@ -15,9 +15,9 @@ export default function Home() {
         <p className="w-[67%] h-6 font-inter font-medium text-xl flex flex-col">
           Hello people!
         </p>
-        <h1 className="w-[67%] h-72 font-inter font-bold text-8xl leading-tight">
+        {/* <h1 className="w-[67%] h-72 font-inter font-bold text-8xl leading-tight">
           We&apos;re Student&apos;s welface club.
-        </h1>
+        </h1> */}
 
         <div className="flex gap-2">
           <Link
