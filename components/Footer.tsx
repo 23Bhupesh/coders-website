@@ -35,7 +35,7 @@ const Footer = () => {
 
       {/* side logo */}
 
-      <div className="px-10 hidden lg:visible md:visible">
+      <div className="lg:px-10 md:px-6 px-3 hidden lg:visible md:visible">
         <div className="flex items-center gap-2 mt-2">
           <div className="">
             <Image src="images/logo_navbar.svg" height={52} width={50} alt="Logo" />
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
 
           {/* icons */}
-          <div className="flex gap-2 mx-auto mb-4">
+          <div className="w-auto mx-auto lg:mx-0 md:mx-0 flex gap-2 mb-4">
             <Link href="https://www.instagram.com/coders.dyp/" target="_blank" rel="noopener noreferrer">
               <Image src="images/instagram_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
             </Link>
