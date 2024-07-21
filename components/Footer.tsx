@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
 
           {/* icons */}
-          <div className="flex gap-2 mx-auto my-8">
+          <div className="flex gap-2 mx-auto mb-4">
             <Link href="https://www.instagram.com/coders.dyp/" target="_blank" rel="noopener noreferrer">
               <Image src="images/instagram_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
             </Link>
