@@ -18,6 +18,8 @@ const config: Config = {
         leckerli: ['Leckerli One', 'cursive'],
         lato: ['Lato', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
+        halfmoon: ['Halfmoon', 'sans-serif'],
+        moshitomono: ['Moshito Mono', 'monospace'],
       },
       letterSpacing: {
         'extra-widest': '0.45em',

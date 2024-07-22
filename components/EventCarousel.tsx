@@ -25,7 +25,7 @@ const EventCarousel = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden h-64">
+    <div className="relative overflow-hidden lg:h-64 md:h-64 h-auto my-10">
       <div
         ref={carouselRef}
         className="flex gap-3 whitespace-nowrap animate-scroll"

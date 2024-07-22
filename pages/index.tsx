@@ -1,25 +1,29 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import RecentEventRight from "@/components/RecentEventRight";
-import RecentEventLeft from "@/components/RecentEventLeft";
 import GalleryImage from "@/components/GalleryImage";
-import {imagesColumn1, imagesColumn2, imagesColumn3} from "../public/DataGalleryImage";
+import {
+  imagesColumn1,
+  imagesColumn2,
+  imagesColumn3,
+} from "../public/DataGalleryImage";
+import MarqueeComponent_1 from "@/components/MarqueeComponent_1";
+import RecentEvent from "@/components/RecentEvent";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="text-white pt-20">
+    <div className="text-white pt-20 overflow-hidden">
       <div className=" h-screen w-full flex flex-col justify-center items-center">
         <p className="w-[67%] h-6 font-inter font-medium text-xl flex flex-col">
           Hello people!
         </p>
-        {/* <h1 className="w-[67%] h-72 font-inter font-bold text-8xl leading-tight">
+        <h1 className="w-[67%] h-72 font-inter font-bold text-8xl leading-tight">
           We&apos;re Student&apos;s welface club.
-        </h1> */}
+        </h1>
 
-        {/* <div className="flex gap-2">
+        <div className="flex gap-2">
           <Link
             href="https://www.instagram.com/coders.dyp/"
             target="_blank"
@@ -86,42 +90,43 @@ export default function Home() {
               className="h-12 w-12 hover:cursor-pointer"
             />
           </Link>
-        </div> */}
+        </div>
       </div>
 
       {/* Scrolling Divisions */}
       {/* Parent Div */}
 
-      {/* <div className=" h-auto font-roboto">
-        <div className=" bg-[#E7E7E7] h-24 w-full items-center">
-          <ul className="h-24 flex items-center font-normal text-3xl list-disc justify-between m-auto text-[#212121] custom-disc-color">
-            <li>UI/UX</li>
-            <li>MARKETING</li>
-            <li>HACKATHON</li>
-            <li>APPLICATIONS</li>
-            <li>STARTUP IDEAS</li>
-            <li>CREATIVE DESIGN</li>
+      {/* <div className="relative h-96 font-roboto"> */}
+        {/* <div className="marquee bg-[#E7E7E7] h-24 w-[100vw]">
+          <ul className="h-24 marquee-content flex items-center font-normal text-3xl list-disc justify-between m-auto text-[#212121] custom-disc-color">
+              <li className="w-[180px] pl-">UI/UX</li>
+              <li className="w-[180px] pl-">MARKETING</li>
+              <li className="w-[180px] pl-">HACKATHON</li>
+              <li className="w-[180px] pl-">APPLICATIONS</li>
+              <li className="w-[180px] pl-">STARTUP IDEAS</li>
           </ul>
+        </div> */}
+        <div className="z-20">
+          <MarqueeComponent_1 />
         </div>
-        <div className="bg-[#212121]  h-[104px] w-full">
+        <div className="bg-[#212121] h-[104px] w-[110%]">
           <ul className="h-24 flex items-center font-normal text-3xl list-disc justify-between m-auto text-white custom-disc-color">
-            <li>HIGHER STUDIES</li>
-            <li>CREATIVE DESIGN</li>
-            <li>TEAMS</li>
-            <li>CREATIVE</li>
-            <li>START-UPS</li>
+            <li className="pl-6">HIGHER STUDIES</li>
+            <li className="pl-6">CREATIVE DESIGN</li>
+            <li className="pl-6">TEAMS</li>
+            <li className="pl-6">START-UPS</li>
           </ul>
         </div>
-      </div> */}
+      {/* </div> */}
 
       {/* About us */}
       <div className="h-screen w-full text-white flex flex-col p-10">
-        {/* <p className="font-inter font-normal text-xl h-6 w-28 mx-5">ABOUT US</p> */}
+        <p className="font-inter font-normal text-xl h-6 w-28 mx-5">ABOUT US</p>
 
         {/* Parent div */}
         <div className="flex">
           {/* Text */}
-          {/* <div className="w-1/2 flex flex-col gap-4 p-5">
+          <div className="w-1/2 flex flex-col gap-4 p-5">
             <div className="h-24 w-[90%] font-inter font-bold text-2xl">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
@@ -131,10 +136,10 @@ export default function Home() {
               the 1500s, when an unknown printer took a galley of type and
               scrambled it to make a type specimen book.
             </div>
-          </div> */}
+          </div>
 
           {/* photo */}
-          {/* <div className="w-1/2 p-5">
+          <div className="w-1/2 p-5">
             <Image
               height={400}
               width={600}
@@ -142,25 +147,25 @@ export default function Home() {
               alt=""
               className=""
             />
-          </div> */}
+          </div>
         </div>
         {/* Button */}
-        {/* <div className="mx-5">
+        <div className="mx-5">
           <button className="border-2 w-44 h-14 ">MEET THE TEAM</button>
-        </div> */}
+        </div>
       </div>
 
       {/* recent Events */}
-      {/* <div>
+      <div>
         <h1 className="mx-auto my-20 h-9 w-auto font-roboto font-bold text-4xl text-center tracking-wider">
           RECENT EVENTS
         </h1>
-        <RecentEventLeft />
-        <RecentEventRight />
-      </div> */}
+        <RecentEvent />
+        <RecentEvent />
+      </div>
 
       {/* Gallery */}
-      {/* <div>
+      <div>
         <h1 className="mx-auto my-20 h-9 w-auto font-roboto font-bold text-4xl text-center tracking-wider">
           GALLERY
         </h1>
@@ -180,7 +185,7 @@ export default function Home() {
             animation="animate-scrollTopBottom"
           />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
