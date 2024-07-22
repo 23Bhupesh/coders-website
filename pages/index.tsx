@@ -97,7 +97,7 @@ export default function Home() {
       {/* Parent Div */}
 
       {/* <div className="relative h-96 font-roboto"> */}
-        {/* <div className="marquee bg-[#E7E7E7] h-24 w-[100vw]">
+      {/* <div className="marquee bg-[#E7E7E7] h-24 w-[100vw]">
           <ul className="h-24 marquee-content flex items-center font-normal text-3xl list-disc justify-between m-auto text-[#212121] custom-disc-color">
               <li className="w-[180px] pl-">UI/UX</li>
               <li className="w-[180px] pl-">MARKETING</li>
@@ -106,17 +106,17 @@ export default function Home() {
               <li className="w-[180px] pl-">STARTUP IDEAS</li>
           </ul>
         </div> */}
-        <div className="z-20">
-          <MarqueeComponent_1 />
-        </div>
-        <div className="bg-[#212121] h-[104px] w-[110%]">
-          <ul className="h-24 flex items-center font-normal text-3xl list-disc justify-between m-auto text-white custom-disc-color">
-            <li className="pl-6">HIGHER STUDIES</li>
-            <li className="pl-6">CREATIVE DESIGN</li>
-            <li className="pl-6">TEAMS</li>
-            <li className="pl-6">START-UPS</li>
-          </ul>
-        </div>
+      <div className="z-20">
+        <MarqueeComponent_1 />
+      </div>
+      <div className="bg-[#212121] h-[104px] w-[110%]">
+        <ul className="h-24 flex items-center font-normal text-3xl list-disc justify-between m-auto text-white custom-disc-color">
+          <li className="pl-6">HIGHER STUDIES</li>
+          <li className="pl-6">CREATIVE DESIGN</li>
+          <li className="pl-6">TEAMS</li>
+          <li className="pl-6">START-UPS</li>
+        </ul>
+      </div>
       {/* </div> */}
 
       {/* About us */}
@@ -124,22 +124,9 @@ export default function Home() {
         <p className="font-inter font-normal text-xl h-6 w-28 mx-5">ABOUT US</p>
 
         {/* Parent div */}
-        <div className="flex">
-          {/* Text */}
-          <div className="w-1/2 flex flex-col gap-4 p-5">
-            <div className="h-24 w-[90%] font-inter font-bold text-2xl">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </div>
-            <div className="h-56 w-[90%] font-inter font-bold text-2xl">
-              Lorem Ipsum has been the industrys standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </div>
-          </div>
-
+        <div className="lg:flex md:flex flex-row-reverse">
           {/* photo */}
-          <div className="w-1/2 p-5">
+          <div className="w-full lg:w-1/2 md:w-1/2 p-2">
             <Image
               height={400}
               width={600}
@@ -148,9 +135,21 @@ export default function Home() {
               className=""
             />
           </div>
+          {/* Text */}
+          <div className="lg:w-1/2 md:w-1/2 w-auto flex flex-col gap-4 p-2">
+            <div className="lg:h-24 lg:w-[90%] md:w-[90%] h-auto w-auto font-inter font-bold lg:text-2xl text-base">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+            <div className="h-56 lg:w-[90%] md:w-[90%] w-auto font-inter font-bold lg:text-2xl text-base">
+              Lorem Ipsum has been the industrys standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </div>
+          </div>
         </div>
         {/* Button */}
-        <div className="mx-5">
+        <div className="mx-5 lg:visible md:visible hidden">
           <button className="border-2 w-44 h-14 ">MEET THE TEAM</button>
         </div>
       </div>
@@ -170,20 +169,24 @@ export default function Home() {
           GALLERY
         </h1>
 
-        <div className="flex flex-row justify-evenly overflow-hidden h-screen">
-          <GalleryImage
-            images={imagesColumn1}
-            animation="animate-scrollTopBottom"
-          />
+        <div className="w-full flex flex-row items-center lg:mx-0 md:mx-0 mx-auto justify-evenly overflow-hidden h-screen px-5">
+          <div className="lg:visible mg:visible hidden">
+            <GalleryImage
+              images={imagesColumn1}
+              animation="animate-scrollTopBottom"
+            />
+          </div>
           <GalleryImage
             images={imagesColumn2}
             reverse
             animation="animate-scrollBottomTop"
           />
-          <GalleryImage
-            images={imagesColumn3}
-            animation="animate-scrollTopBottom"
-          />
+          <div className="lg:visible mg:visible hidden">
+            <GalleryImage
+              images={imagesColumn3}
+              animation="animate-scrollTopBottom"
+            />
+          </div>
         </div>
       </div>
     </div>

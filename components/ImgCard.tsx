@@ -11,7 +11,7 @@ interface ImgCardProps {
 
 const ImgCard: React.FC<ImgCardProps> = (props) => {
   return (
-    <div className="flex flex-col h-[252px] w-[200px] gap-2 text-white">
+    <div className="flex flex-col h-64 w-48 gap-2 text-white">
       <div className="relative">
         <Image src={props.img} width={200} height={200} alt="" className="rounded-2" />
         <Link

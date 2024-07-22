@@ -10,7 +10,7 @@ const index = () => {
     <div className="font-lemonmilk text-white pt-20">
       {/* headline div */}
       <div className="h-screen w-full flex justify-center items-center">
-        <p className=" w-[75%] h-64 leading-tight text-center flex justify-center items-center font-bold text-8xl ">
+        <p className=" w-[75%] h-64 leading-tight text-center flex justify-center items-center font-bold lg:text-8xl md:text-7xl text-5xl ">
           PEOPLE WHO LEAD OUR COMMUNITY
         </p>
       </div>
@@ -18,8 +18,8 @@ const index = () => {
       {/* Our_Megaminds div */}
       <div className="h-screen w-full">
         {/* font */}
-        <div className="w-[46%] h-24 flex justify-center items-center mx-auto">
-          <p className="font-bold text-6xl flex justify-center">
+        <div className="lg:w-[46%] md:w-[46%] w-auto h-24 flex justify-center items-center mx-auto">
+          <p className="font-bold lg:text-6xl md:text-5xl text-3xl flex justify-center">
             OUR MEGAMINDS
           </p>
         </div>
@@ -102,7 +102,7 @@ const index = () => {
             alt=""
             className="mx-4"
           />
-          <p className="font-bold text-6xl flex justify-center">
+          <p className="font-bold lg:text-6xl md:text-6xl text-3xl flex justify-center">
             faculty coordinators
           </p>
           <Image
@@ -118,7 +118,7 @@ const index = () => {
         {Array.from({ length: 6 }, (_, rowIndex) => (
           <div className="flex justify-center gap-4 " key={rowIndex}>
             {DataFaculty.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
-              (person : any, index : number) => (
+              (person: any, index: number) => (
                 <ImgCard
                   key={index}
                   img={person.img}
@@ -141,7 +141,9 @@ const index = () => {
           alt=""
           className="mx-4"
         />
-        <p className="font-bold text-6xl flex justify-center">our team 2023</p>
+        <p className="font-bold lg:text-6xl md:text-5xl text-3xl flex justify-center">
+          our team 2023
+        </p>
         <Image
           height={78}
           width={59}
@@ -156,7 +158,7 @@ const index = () => {
         {Array.from({ length: 6 }, (_, rowIndex) => (
           <div className="flex justify-center gap-4 mb-10" key={rowIndex}>
             {DataTeam2023.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
-              (person : any, index: number) => (
+              (person: any, index: number) => (
                 <ImgCard
                   key={index}
                   img={person.img}
@@ -192,7 +194,7 @@ const index = () => {
         {Array.from({ length: 6 }, (_, rowIndex) => (
           <div className="flex justify-center gap-4 mb-10" key={rowIndex}>
             {DataTeam2023.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
-              (person : any, index : number) => (
+              (person: any, index: number) => (
                 <ImgCard
                   key={index}
                   img={person.img}
