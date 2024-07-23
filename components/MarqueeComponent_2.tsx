@@ -1,27 +1,25 @@
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
-const MarqueeComponent_1 = () => {
+const MarqueeComponent_2 = () => {
   return (
-    <div className="bg-[#E7E7E7] h-24 w-[105%] lg:rotate-2 md:rotate-2 rotate-0 left-8">
+    <div className="bg-[#212121] text-white h-24 w-[105%] overflow-hidden -rotate-[10deg] -left-6  hidden lg:block md:block ">
       <Marquee gradient={false} speed={100} className="flex items-center h-[100%]">
-        <ul className="h- my-auto flex items-center font-normal text-3xl text-[#212121]">
+        <ul className="h- my-auto flex items-center font-normal text-3xl">
           <Image height={17} width={16} src="/images/img_bullet.png" alt="" className="mx-7" />
-          <li className="mx-7">UI/UX</li>
-          <Image height={17} width={16} src="/images/img_bullet.png" alt="" className="mx-7" />
-          <li className="mx-7">MARKETING</li>
-          <Image height={17} width={16} src="/images/img_bullet.png" alt="" className="mx-7" />
-          <li className="mx-7">HACKATHON</li>
-          <Image height={17} width={16} src="/images/img_bullet.png" alt="" className="mx-7" />
-          <li className="mx-7">APPLICATIONS</li>
-          <Image height={17} width={16} src="/images/img_bullet.png" alt="" className="mx-7" />
-          <li className="mx-7">STARTUP IDEAS</li>
+          <li className="mx-7">HIGHER STUDIES</li>
           <Image height={17} width={16} src="/images/img_bullet.png" alt="" className="mx-7" />
           <li className="mx-7">CREATIVE DESIGN</li>
+          <Image height={17} width={16} src="/images/img_bullet.png" alt="" className="mx-7" />
+          <li className="mx-7">TEAMS</li>
+          <Image height={17} width={16} src="/images/img_bullet.png" alt="" className="mx-7" />
+          <li className="mx-7">START-UPS</li>
+          <Image height={17} width={16} src="/images/img_bullet.png" alt="" className="mx-7" />
+          <li className="mx-7">MANAGEMENT</li>
         </ul>
       </Marquee>
       </div>
   );
 };
 
-export default MarqueeComponent_1;
+export default MarqueeComponent_2;
