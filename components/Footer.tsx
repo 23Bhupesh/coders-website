@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full h-44 text-white mt-40">
+    <div className="w-full h-44 text-white mt-20">
       {/* want to collaborate */}
 
       <div className="flex">
@@ -54,9 +54,9 @@ const Footer = () => {
 
       <div className="lg:flex md:flex p-10 justify-between">
         <div className="flex flex-col justify-between">
-          <div className="h-14 w-80 hidden md:block lg:block">
+          <div className="h-14 w-96 hidden md:block lg:block">
             <p className="font-inter font-normal text-xl leading-6">
-              Coders.dyp is one of the most active clubs in whole Pune.
+            Coders.dyp fuels creativity and innovation in Pune’s tech landscape.
             </p>
           </div>
 

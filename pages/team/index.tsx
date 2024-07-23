@@ -191,7 +191,7 @@ const index = () => {
         />
       </div>
       <div className="mt-10 mb-28">
-        {Array.from({ length: 6 }, (_, rowIndex) => (
+        {/* {Array.from({ length: 6 }, (_, rowIndex) => (
           <div className="flex justify-center gap-4 mb-10" key={rowIndex}>
             {DataTeam2023.slice(rowIndex * 5 + 0, rowIndex * 5 + 5).map(
               (person: any, index: number) => (
@@ -205,7 +205,10 @@ const index = () => {
               )
             )}
           </div>
-        ))}
+        ))} */}
+        <div className="h-auto w-auto mx-auto">
+        <Image src="/images/img_founding_team_2.jpg" height={300} width={1000} alt="founding Team Image" className="mx-auto rounded-xl" />
+        </div>
       </div>
     </div>
   );

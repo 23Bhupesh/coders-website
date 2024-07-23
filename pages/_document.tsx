@@ -25,7 +25,7 @@ export default function Document() {
          />
       </Head>
       <body className="bg-custom-bg bg-cover bg-center bg-no-repeat bg-[#000000] ">
-        {/* <Navbar /> */}
+        <Navbar />
         <Main />
         <Footer />
         <NextScript />

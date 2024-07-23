@@ -16,15 +16,15 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div className="text-white pt-20 overflow-hidden">
-      <div className=" h-screen w-full flex flex-col justify-center lg:items-center md:items-center ">
-        <p className="lg:w-[67%] md:w-[67%] w-auto lg:h-6 md:h-6 h-auto font-inter font-medium lg:text-xl md:text-xl text-lg flex flex-col lg:text-left md:text-left text-center lg:px-0 md:px-0 px-2">
+      <div className=" lg:h-screen md:h-screen h-auto w-full flex flex-col justify-center lg:items-center md:items-center ">
+        <p className="lg:w-[67%] md:w-[67%] w-auto lg:h-6 md:h-6 h-auto font-inter font-medium lg:text-xl md:text-xl text-lg flex flex-col lg:text-left md:text-left text-center lg:px-0 md:px-0 px-2 lg:mb-0 md:mb-0 mb-2">
           Hello people!
         </p>
-        <h1 className="lg:w-[67%] md:w-[67%] w-full lg:h-72 md:h-72 h-auto font-inter font-bold lg:text-8xl md:text-7xl text-6xl lg:text-left md:text-left text-center lg:px-0 md:px-0 px-2 leading-tight">
+        <h1 className="lg:w-[67%] md:w-[67%] w-full lg:h-72 md:h-72 h-auto font-inter font-bold lg:text-8xl md:text-7xl text-5xl lg:text-left md:text-left text-center lg:px-0 md:px-0 px-2 leading-tight">
           We&apos;re Student&apos;s welface club.
         </h1>
 
-        <div className="flex lg:gap-4 md:gap-4 gap-2 lg:mx-0 md:mx-0 mx-auto">
+        <div className="flex lg:gap-4 md:gap-4 gap-2 lg:my-0 md:my-0 my-4 lg:mx-0 md:mx-0 mx-auto">
           <Link
             href="https://www.instagram.com/coders.dyp/"
             target="_blank"
@@ -126,7 +126,7 @@ export default function Home() {
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </div>
-            <div className="h-56 lg:w-[90%] md:w-[90%] w-auto font-inter font-bold lg:text-2xl text-base">
+            <div className="lg:h-56 md:h-auto h-auto lg:mb-0 md:mb-0 mb-5 lg:w-[90%] md:w-[90%] w-auto font-inter font-bold lg:text-2xl text-base">
               Lorem Ipsum has been the industrys standard dummy text ever since
               the 1500s, when an unknown printer took a galley of type and
               scrambled it to make a type specimen book.
@@ -134,8 +134,8 @@ export default function Home() {
           </div>
         </div>
         {/* Button */}
-        <div className="mx-5 ">
-          <button className="border-2 w-auto px-5 h-14 hidden lg:block md:block ">MEET THE TEAM</button>
+        <div className="lg:mx-5 md:mx-5 mx-auto">
+          <button className="border-2 w-auto px-5 lg:h-14 md:h-10 h-auto ">MEET THE TEAM</button>
         </div>
       </div>
 
@@ -155,7 +155,7 @@ export default function Home() {
         </h1>
 
         <div className="w-full flex flex-row items-center lg:mx-0 md:mx-0 mx-auto justify-evenly overflow-hidden h-screen px-5">
-          <div className="lg:visible mg:visible hidden">
+          <div className="lg:block md:block hidden">
             <GalleryImage
               images={imagesColumn1}
               animation="animate-scrollTopBottom"
@@ -166,7 +166,7 @@ export default function Home() {
             reverse
             animation="animate-scrollBottomTop"
           />
-          <div className="lg:visible mg:visible hidden">
+          <div className="lg:block md:block hidden">
             <GalleryImage
               images={imagesColumn3}
               animation="animate-scrollTopBottom"
