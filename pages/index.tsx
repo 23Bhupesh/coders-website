@@ -141,7 +141,7 @@ export default function Home() {
 
       {/* recent Events */}
       <div className="h-auto w-full">
-        <h1 className="mx-auto my-20 h-9 w-auto font-roboto font-bold text-4xl text-center tracking-wider">
+        <h1 className="mx-auto mb-20 mt-2 h-9 w-auto font-inter font-bold text-4xl text-center tracking-wider">
           RECENT EVENTS
         </h1>
         <RecentEvent />
