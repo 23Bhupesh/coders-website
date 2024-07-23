@@ -105,7 +105,7 @@ export default function Home() {
       </div>
 
       {/* About us */}
-      <div className="h-screen w-full text-white flex flex-col p-10 mt-10">
+      <div className="lg:h-screen md:h-screen h-auto w-full text-white flex flex-col p-10 mt-10">
         <p className="font-inter font-normal text-xl h-6 w-28 lg:mx-5 md:mx-5 mx-0 mb-3">ABOUT US</p>
 
         {/* Parent div */}
@@ -141,7 +141,7 @@ export default function Home() {
 
       {/* recent Events */}
       <div className="h-auto w-full">
-        <h1 className="mx-auto mb-20 mt-2 h-9 w-auto font-inter font-bold text-4xl text-center tracking-wider">
+        <h1 className="mx-auto mb-20 mt-5 h-9 w-auto font-inter font-bold text-4xl text-center tracking-wider">
           RECENT EVENTS
         </h1>
         <RecentEvent />
