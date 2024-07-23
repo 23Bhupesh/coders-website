@@ -106,7 +106,9 @@ export default function Home() {
 
       {/* About us */}
       <div className="lg:h-screen md:h-screen h-auto w-full text-white flex flex-col p-10 mt-10">
-        <p className="font-inter font-normal text-xl h-6 w-28 lg:mx-5 md:mx-5 mx-0 mb-3">ABOUT US</p>
+        <p className="font-inter font-normal text-xl h-6 w-28 lg:mx-5 md:mx-5 mx-0 mb-3">
+          ABOUT US
+        </p>
 
         {/* Parent div */}
         <div className="lg:flex md:flex flex-row-reverse">
@@ -135,7 +137,11 @@ export default function Home() {
         </div>
         {/* Button */}
         <div className="lg:mx-5 md:mx-5 mx-auto">
-          <button className="border-2 w-auto px-5 lg:h-14 md:h-10 h-auto ">MEET THE TEAM</button>
+          <Link href="/team">
+            <button className="border-2 w-auto px-5 lg:h-14 md:h-10 h-auto ">
+              MEET THE TEAM
+            </button>
+          </Link>
         </div>
       </div>
 
