@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div className="text-white pt-20 overflow-hidden">
-      <div className=" lg:h-screen md:h-screen h-auto w-full flex flex-col justify-center lg:items-center md:items-center ">
+      <div className="h-screen w-full flex flex-col justify-center lg:items-center md:items-center ">
         <p className="lg:w-[67%] md:w-[67%] w-auto lg:h-6 md:h-6 h-auto font-inter font-medium lg:text-xl md:text-xl text-lg flex flex-col lg:text-left md:text-left text-center lg:px-0 md:px-0 px-2 lg:mb-0 md:mb-0 mb-2">
           Hello people!
         </p>
