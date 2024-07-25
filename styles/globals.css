@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+  
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -47,7 +47,7 @@
     transform: translateY(0%);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(-50%);
   }
 }
 
@@ -56,34 +56,14 @@
     transform: translateY(0%);
   }
   100% {
-    transform: translateY(100%);
+    transform: translateY(50%);
   }
 }
 
 .animate-scrollTopBottom {
-  animation: scrollTopBottom 20s linear infinite;
+  animation: scrollTopBottom 5s linear infinite;
 }
 
 .animate-scrollBottomTop {
-  animation: scrollBottomTop 20s linear infinite;
+  animation: scrollBottomTop 5s linear infinite;
 }
-/* 
-@keyframes marquee {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-.marquee {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-}
-
-.marquee-content {
-  display: inline-flex;
-  padding-left: 100%;
-  animation: marquee 10s linear infinite;
-} */
