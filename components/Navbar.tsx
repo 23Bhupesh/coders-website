@@ -16,7 +16,7 @@ import { Input } from "postcss";
 
 const Navbar = () => {
   return (
-    <div className="text-white w-full fixed z-50 h-20 flex justify-between px-10 bg-custom-bg bg-cover bg-center bg-no-repeat bg-[#000000]">
+    <div className="text-white w-full fixed z-50 h-20 flex justify-between lg:px-10 md:px-10 px-5 bg-custom-bg bg-cover bg-center bg-no-repeat bg-[#000000]">
       <div className="flex items-center gap-2 mt-2">
         <div className="hidden lg:block md:block ">
           <Image
@@ -36,11 +36,11 @@ const Navbar = () => {
       <div className="visible lg:hidden md:hidden">
         <Sheet>
           <SheetTrigger asChild>
-            <div className="flex items-center h-full w-full my-auto">
-              <HiOutlineBars3 className="h-9 w-9 my-auto" />
+            <div className="flex items-center h-full w-full my-auto ">
+              <HiOutlineBars3 className="h-8 w-8 my-auto" />
             </div>
           </SheetTrigger>
-          <SheetContent className="text-white w-full h-full bg-mobile-bg bg-cover bg-no-repeat flex flex-col justify-center items-center">
+          <SheetContent className="text-white w-full h-full flex flex-col justify-center items-center">
             <div className="flex flex-col h-auto w-auto justify-center items-center">
               <div className="h-auto flex flex-col gap-4 w-auto my-auto text-center font-inter text-2xl leading-loose tracking-wider font-medium">
                 <Link href="/" className="h-14 flex flex-col justify-center">HOME</Link>
