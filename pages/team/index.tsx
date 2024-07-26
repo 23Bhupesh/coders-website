@@ -12,7 +12,7 @@ const index = () => {
       <Navbar />
       <div className="font-lemonmilk text-white pt-20">
         {/* headline div */}
-        <div className="h-screen w-full flex justify-center items-center">
+        <div className="lg:h-screen md:h-screen h-auto w-full flex justify-center items-center lg:my-0 md:my-0 my-20">
           <p className=" w-[75%] h-64 leading-tight text-center flex justify-center items-center font-bold lg:text-8xl md:text-7xl text-5xl ">
             PEOPLE WHO LEAD OUR COMMUNITY
           </p>
