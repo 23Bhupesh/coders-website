@@ -19,11 +19,11 @@ export default function Home() {
     <div>
       <Navbar />
       <div className="text-white pt-20 overflow-hidden">
-        <div className="h-screen w-full flex flex-col justify-center lg:items-center md:items-center ">
-          <p className="lg:w-[67%] md:w-[67%] w-auto lg:h-6 md:h-6 h-auto font-inter font-medium lg:text-xl md:text-xl text-lg flex flex-col lg:text-left md:text-left text-center lg:px-0 md:px-0 px-2 lg:mb-0 md:mb-0 mb-2">
+        <div className="lg:h-screen md:h-screen h-auto w-full flex flex-col justify-center items-center lg:mt-0 md:mt-0 mt-20">
+          <p className="lg:w-[67%] md:w-[67%] w-[91%] lg:h-6 md:h-6 h-auto font-inter font-medium lg:text-xl md:text-xl text-lg flex flex-col text-left lg:px-0 md:px-0 px-2 mb-0 text-[#909090]">
             Hello people!
           </p>
-          <h1 className="lg:w-[67%] md:w-[67%] w-full lg:h-72 md:h-72 h-auto font-inter font-bold lg:text-8xl md:text-7xl text-6xl lg:text-left md:text-left text-center lg:px-0 md:px-0 px-2 leading-tight">
+          <h1 className="lg:w-[67%] md:w-[67%] w-[91%] lg:h-72 md:h-72 h-auto font-inter font-bold lg:text-8xl md:text-7xl text-5xl leading-normal text-left lg:px-0 md:px-0 px-2 ">
             We&apos;re Student&apos;s welface club.
           </h1>
 
@@ -108,21 +108,21 @@ export default function Home() {
         </div>
 
         {/* About us */}
-        <div className="lg:h-screen md:h-screen h-auto w-full text-white flex flex-col p-10 mt-10">
-          <p className="font-inter font-normal text-xl h-6 w-28 lg:mx-5 md:mx-5 mx-0 mb-3">
+        <div className="lg:h-screen md:h-screen h-auto w-full text-white flex flex-col lg:p-10 md:p-10 p-5 lg:mt-10 md:mt-10 mt-2">
+          <p className="font-inter font-normal lg:text-xl md:text-xl text-xs text-[#B0AEAE] h-6 w-28 mx-0 lg:mb-3 md:mb-3 mb-0">
             ABOUT US
           </p>
 
           {/* Parent div */}
           <div className="lg:flex md:flex flex-row-reverse">
             {/* photo */}
-            <div className="w-full lg:w-1/2 md:w-1/2 p-2">
+            <div className="w-full lg:w-1/2 md:w-1/2 lg:p-2 md:p-2 p-0">
               <Image
                 height={400}
                 width={600}
                 src="images/img_group.svg"
                 alt=""
-                className=""
+                className="mx-auto"
               />
             </div>
             {/* Text */}
@@ -139,9 +139,9 @@ export default function Home() {
             </div>
           </div>
           {/* Button */}
-          <div className="lg:mx-5 md:mx-5 mx-auto">
+          <div className="lg:mx-0 md:mx-0 mx-auto lg:py-0 md:py-0 py-4">
             <Link href="/team">
-              <button className="border-2 w-auto px-5 lg:h-14 md:h-10 h-auto ">
+              <button className="border-2 font-inter font-semibold rounded-md w-auto px-2 lg:h-14 md:h-10 h-8 ">
                 MEET THE TEAM
               </button>
             </Link>
@@ -155,6 +155,13 @@ export default function Home() {
           </h1>
           <RecentEvent />
           <RecentEvent />
+          <div className="flex px-5">
+            <Link href="/events" className="lg:w-auto md:w-auto w-full mx-auto">
+              <button className="mx-auto border-2 h-10 lg:w-32 md:w-32 w-full rounded-md font-lemonmilk font-normal text-base">
+                SEE MORE
+              </button>
+            </Link>
+          </div>
         </div>
 
         {/* Gallery */}
