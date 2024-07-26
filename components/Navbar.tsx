@@ -35,7 +35,7 @@ const Navbar = () => {
 
       <div className="visible lg:hidden md:hidden">
         <Sheet>
-          <SheetTrigger asChild>
+          <SheetTrigger asChild className="w-full">
             <div className="flex items-center h-full w-full my-auto ">
               <HiOutlineBars3 className="h-8 w-8 my-auto" />
             </div>

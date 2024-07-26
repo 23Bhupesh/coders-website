@@ -23,7 +23,7 @@ export default function Home() {
           <p className="lg:w-[67%] md:w-[67%] w-auto lg:h-6 md:h-6 h-auto font-inter font-medium lg:text-xl md:text-xl text-lg flex flex-col lg:text-left md:text-left text-center lg:px-0 md:px-0 px-2 lg:mb-0 md:mb-0 mb-2">
             Hello people!
           </p>
-          <h1 className="lg:w-[67%] md:w-[67%] w-full lg:h-72 md:h-72 h-auto font-inter font-bold lg:text-8xl md:text-7xl text-5xl lg:text-left md:text-left text-center lg:px-0 md:px-0 px-2 leading-tight">
+          <h1 className="lg:w-[67%] md:w-[67%] w-full lg:h-72 md:h-72 h-auto font-inter font-bold lg:text-8xl md:text-7xl text-6xl lg:text-left md:text-left text-center lg:px-0 md:px-0 px-2 leading-tight">
             We&apos;re Student&apos;s welface club.
           </h1>
 
