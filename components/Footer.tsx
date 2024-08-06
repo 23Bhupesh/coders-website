@@ -22,7 +22,9 @@ const Footer = () => {
       {/*let's chat*/}
 
       <div className="flex md:my-12 lg:my-12 my-5">
-        <p className="mx-auto font-inter font-semibold md:text-9xl lg:text-9xl text-6xl p-2">Let&apos;s Chat</p>
+        <p className="mx-auto font-inter font-semibold md:text-9xl lg:text-9xl text-6xl p-2">
+          Let&apos;s Chat
+        </p>
       </div>
 
       {/* contact us */}
@@ -38,7 +40,12 @@ const Footer = () => {
       <div className="lg:px-10 md:px-6 px-3 hidden lg:visible md:visible">
         <div className="flex items-center gap-2 mt-2">
           <div className="">
-            <Image src="images/logo_navbar.svg" height={52} width={50} alt="Logo" />
+            <Image
+              src="images/logo_navbar.svg"
+              height={52}
+              width={50}
+              alt="Logo"
+            />
           </div>
           <div>
             <p className="font-inter text-xs font-medium">CODERS.DYP</p>
@@ -56,26 +63,63 @@ const Footer = () => {
         <div className="flex flex-col justify-between">
           <div className="h-14 w-96 hidden md:block lg:block">
             <p className="font-inter font-normal text-xl leading-6">
-            Coders.dyp fuels creativity and innovation in Pune’s tech landscape.
+              Coders.dyp fuels creativity and innovation in Pune’s tech
+              landscape.
             </p>
           </div>
 
           {/* icons */}
           <div className="w-auto mx-auto lg:mx-0 md:mx-0 flex gap-2 mb-4">
-            <Link href="https://www.instagram.com/coders.dyp/" target="_blank" rel="noopener noreferrer">
-              <Image src="images/instagram_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
+            <Link
+              href="https://www.instagram.com/coders.dyp/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="images/instagram_icon.svg"
+                width={48}
+                height={48}
+                alt=""
+                className="h-12 w-12 hover:cursor-pointer"
+              />
             </Link>
             {/* <Link href="/" target="_blank" rel="noopener noreferrer">
               <Image src="images/twitter_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
             </Link> */}
-            <Link href="https://www.linkedin.com/company/codersdyp/" target="_blank" rel="noopener noreferrer">
-              <Image src="images/linkedin_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
+            <Link
+              href="https://www.linkedin.com/company/codersdyp/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="images/linkedin_icon.svg"
+                width={48}
+                height={48}
+                alt=""
+                className="h-12 w-12 hover:cursor-pointer"
+              />
             </Link>
-            <Link href="https://chat.whatsapp.com/Dy1BGZyP3cUFTgE7ioUWVo" target="_blank" rel="noopener noreferrer">
-              <Image src="images/whatsapp_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
+            <Link
+              href="https://chat.whatsapp.com/Dy1BGZyP3cUFTgE7ioUWVo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="images/whatsapp_icon.svg"
+                width={48}
+                height={48}
+                alt=""
+                className="h-12 w-12 hover:cursor-pointer"
+              />
             </Link>
             <Link href="/" target="_blank" rel="noopener noreferrer">
-              <Image src="images/youtube_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer border-[1.4px] border-[#E8E7EA] rounded-full" />
+              <Image
+                src="images/youtube_icon.svg"
+                width={48}
+                height={48}
+                alt=""
+                className="h-12 w-12 hover:cursor-pointer border-[1.4px] border-[#E8E7EA] rounded-full"
+              />
             </Link>
             {/* <Link href="/" target="_blank" rel="noopener noreferrer">
               <Image src="images/spotify_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
@@ -89,13 +133,33 @@ const Footer = () => {
             D. Y. Patil Educational Complex, Akurdi, Nigdi, Pimpri-Chinchwad,
             Maharashtra ,411035
           </div>
-          <div className="my-3 w-auto">
-            coders.club@dypiemr.com
-          </div>
-          <div className="mt-2">
-            +91-0000000000
-          </div>
+          <div className="my-3 w-auto">coders.club@dypiemr.com</div>
+          <div className="mt-2">+91-0000000000</div>
         </div>
+      </div>
+      <hr />
+
+      <div className="h-10 w-full flex justify-center items-center">
+        <p className="">
+          Designed by{" "}
+          <Link
+            href="https://www.linkedin.com/in/designbyharsh/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#DDB892]"
+          >
+            Harsh Bhattad{" "}
+          </Link>
+          | Developed by {""}
+          <Link
+            href="https://www.linkedin.com/in/bhupeshsahu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#DDB892]"
+          >
+            Bhupesh Sahu{" "}
+          </Link>
+        </p>
       </div>
     </div>
   );
