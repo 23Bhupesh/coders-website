@@ -67,7 +67,7 @@ const DataTeam2023 = [
         linkedin:""
     }, 
     {
-        img: "/images/img_blank.png",
+        img: "/images/img_pranav.svg",
         name: "pranav jorvekar",
         domain: "media coordinator",
         linkedin:""
@@ -85,31 +85,31 @@ const DataTeam2023 = [
         linkedin:""
     }, 
     {
-        img: "/images/img_blank.png",
+        img: "/images/img_atharva.svg",
         name: "atharva jagtap",
         domain: "media coordinator",
         linkedin:""
     }, 
     {
-        img: "/images/img_blank.png",
+        img: "/images/img_prasad.svg",
         name: "Prasad Ware",
         domain: "web developer",
         linkedin:""
     }, 
     {
-        img: "/images/img_blank.png",
+        img: "/images/img_abhijit.svg",
         name: "Abhijit Abhang",
         domain: "Web developer",
         linkedin:""
     }, 
     {
-        img: "/images/img_blank.png",
+        img: "/images/img_adwaiy.svg",
         name: "adwaiy pillai",
         domain: "web developer",
         linkedin:""
     }, 
     {
-        img: "/images/img_blank.png",
+        img: "/images/img_raghav.svg",
         name: "raghav tandulkar",
         domain: "web developer",
         linkedin:""
@@ -127,7 +127,7 @@ const DataTeam2023 = [
         linkedin:""
     }, 
     {
-        img: "/images/img_blank.png",
+        img: "/images/img_amol.svg",
         name: "amol raut",
         domain: "video editor",
         linkedin:""
@@ -157,19 +157,19 @@ const DataTeam2023 = [
         linkedin:""
     }, 
     {
-        img: "/images/img_blank.png",
+        img: "/images/img_dhananjay.svg",
         name: "Dhananjay Ingole",
         domain: "Management coordinator",
         linkedin:""
     }, 
     {
-        img: "/images/img_blank.png",
+        img: "/images/img_tanay.svg",
         name: "tanay jain",
         domain: "management coordinator",
         linkedin:""
     }, 
     {
-        img: "/images/img_blank.png",
+        img: "/images/img_fazal.svg",
         name: "fazal sulphy",
         domain: "management coordinator",
         linkedin:""
