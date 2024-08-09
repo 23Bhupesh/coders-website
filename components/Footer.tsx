@@ -139,14 +139,14 @@ const Footer = () => {
       </div>
       <hr />
 
-      <div className="h-10 w-full flex justify-center items-center">
-        <p className="">
+      <div className="h-auto lg:h-10 md:h-10 w-full flex justify-center items-center font-inter">
+        <p className="text-center text-white">
           Designed by{" "}
           <Link
             href="https://www.linkedin.com/in/designbyharsh/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#DDB892]"
+            className="hover:text-[#909090]"
           >
             Harsh Bhattad{" "}
           </Link>
@@ -155,7 +155,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/bhupeshsahu/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#DDB892]"
+            className="hover:text-[#909090]"
           >
             Bhupesh Sahu{" "}
           </Link>
