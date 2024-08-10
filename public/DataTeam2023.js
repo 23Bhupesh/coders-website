@@ -73,7 +73,7 @@ const DataTeam2023 = [
         linkedin:""
     }, 
     {
-        img: "/images/img_blank.png",
+        img: "/images/img_shreya.svg",
         name: "shreya pachgare",
         domain: "media coordinator",
         linkedin:""
