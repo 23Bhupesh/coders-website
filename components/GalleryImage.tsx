@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 // Define an interface for the image data
 interface ImageData {
   height: number;
