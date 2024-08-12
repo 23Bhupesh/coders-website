@@ -79,7 +79,7 @@ const DataTeam2023 = [
         linkedin:""
     }, 
     {
-        img: "/images/img_blank.png",
+        img: "/images/img_swapnil.svg",
         name: "swapnil baranwal",
         domain: "media coordinator",
         linkedin:""
