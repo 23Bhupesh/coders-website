@@ -1,5 +1,6 @@
 import React from "react";
 import DataTeam2023 from "../../public/DataTeam2023";
+import DataTeam2024 from "../../public/DataTeam2024";
 import DataFaculty from "../../public/DataFaculty";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,7 +32,7 @@ const index = () => {
           <div className="lg:flex md:flex h-auto justify-center gap-7 my-10 items-center lg:mx-0 md:mx-0 mx-2">
             <div className="flex flex-col gap-2 order-1 lg:order-2 md:order-2 lg:my-0 md:my-0 my-5">
               <Image
-                src="images/preteek_img.svg"
+                src="images/img_prateek_sir(Megamind).svg"
                 height={320}
                 width={320}
                 alt="Prateek Meshram Image"
@@ -39,7 +40,7 @@ const index = () => {
               />
               <div className="flex flex-col items-center lg:h-4 h-auto">
                 <p className="font-bold text-base my-1">Prateek Meshram</p>
-                <Link href="">
+                <Link href="https://www.linkedin.com/in/prateek-meshram-384ba453/">
                   <Image
                     src="images/linkedin.svg"
                     height={20}
@@ -60,7 +61,7 @@ const index = () => {
               />
               <div className="flex flex-col items-center lg:h-4 h-auto">
                 <p className="font-bold text-base my-1">Harsh Bhattad</p>
-                <Link href="">
+                <Link href="https://www.linkedin.com/in/designbyharsh/">
                   <Image
                     src="images/linkedin.svg"
                     height={20}
@@ -81,7 +82,7 @@ const index = () => {
               />
               <div className="flex flex-col items-center lg:h-4 lg-auto">
                 <p className="font-bold text-base my-1">Devarshi Mahajan</p>
-                <Link href="">
+                <Link href="https://www.linkedin.com/in/devarshi-mahajan-973a80209/">
                   <Image
                     src="images/linkedin.svg"
                     height={20}
@@ -130,6 +131,43 @@ const index = () => {
             ))}
           </div>
         </div>
+
+        {/* Team 2024 division*/}
+        <div className="flex justify-center mt-28">
+          <Image
+            height={78}
+            width={59}
+            src="images/heading_left_design.svg"
+            alt=""
+            className="mx-4 lg:block md:block hidden"
+          />
+          <p className="font-bold lg:text-6xl md:text-5xl text-4xl flex justify-center ">
+            our team 2024
+          </p>
+          <Image
+            height={78}
+            width={59}
+            src="images/heading_right_design.svg"
+            alt=""
+            className="mx-4 lg:block md:block hidden"
+          />
+        </div>
+
+        {/* Team-2024 Images */}
+        <div className="my-10">
+          <div className="flex justify-center flex-wrap gap-4 mb-10 lg:w-[83%] md:w-[83%] w-auto mx-auto lg:px-0 md:px-0 px-2">
+            {DataTeam2024.map((person: any, index: number) => (
+              <ImgCard
+                key={index}
+                img={person.img}
+                name={person.name}
+                domain={person.domain}
+                linkedin={person.linkedin}
+              />
+            ))}
+          </div>
+        </div>
+
 
         {/* Team 2023 division*/}
         <div className="flex justify-center mt-28">
