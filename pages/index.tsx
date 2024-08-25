@@ -76,7 +76,11 @@ export default function Home() {
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
-            <Link href="/" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.youtube.com/@codersdyp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src="images/youtube_icon.svg"
                 width={48}
@@ -108,7 +112,7 @@ export default function Home() {
         </div>
 
         {/* About us */}
-        <div className="lg:h-screen md:h-screen h-auto w-full text-white flex flex-col lg:p-10 md:p-10 p-5 lg:mt-10 md:mt-10 mt-2">
+        <div className="lg:h-auto md:h-auto h-auto w-full text-white flex flex-col lg:p-10 md:p-10 p-5 lg:mt-10 md:mt-10 mt-2">
           <p className="font-inter font-normal lg:text-xl md:text-xl text-xs text-[#B0AEAE] h-6 w-28 mx-0 lg:mb-3 md:mb-3 mb-0">
             ABOUT US
           </p>
@@ -126,15 +130,19 @@ export default function Home() {
               />
             </div>
             {/* Text */}
-            <div className="lg:w-1/2 md:w-1/2 w-auto flex flex-col gap-4 mt-5 text-justify">
-              <div className="lg:h-24 lg:w-[90%] md:w-[90%] h-auto w-auto font-inter font-bold lg:text-2xl text-base">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+            <div className="lg:w-1/2 md:w-1/2 w-auto flex flex-col gap-4 mt-5 text-justify font-semibold font-inter lg:text-2xl text-base">
+              <div className="lg:w-[90%] md:w-[90%] h-auto w-auto">
+                The Coders Club is a vibrant community of tech lovers,
+                creatives, and organizers passionate about coding, innovation
+                and collaboration.
               </div>
-              <div className="lg:h-56 md:h-auto h-auto lg:mb-0 md:mb-0 mb-5 lg:w-[90%] md:w-[90%] w-auto font-inter font-bold lg:text-2xl text-base">
-                Lorem Ipsum has been the industrys standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book.
+              <div className="h-auto lg:w-[90%] md:w-[90%] w-auto">
+                Our mission is to foster a collaborative environment where
+                students can enhance their skills, share knowledge, and work on
+                real-world projects.
+              </div>
+              <div className="lg:w-[90%] md:w-[90%] h-auto w-auto lg:mb-0 md:mb-5 mb-5">
+                Join us to code, learn, and grow together!
               </div>
             </div>
           </div>
@@ -171,12 +179,10 @@ export default function Home() {
           </h1>
 
           <div className="w-full flex flex-row items-center lg:mx-0 md:mx-0 mx-auto justify-evenly overflow-hidden h-screen px-5">
-            <div className="lg:block md:block hidden">
               <GalleryImage
                 images={imagesColumn1}
                 animation="animate-scrollTopBottom"
               />
-            </div>
             <GalleryImage
               images={imagesColumn2}
               reverse

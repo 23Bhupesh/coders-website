@@ -40,7 +40,7 @@ const Navbar = () => {
               <HiOutlineBars3 className="h-8 w-8 my-auto" />
             </div>
           </SheetTrigger>
-          <SheetContent className="text-white w-full h-full flex flex-col justify-center items-center">
+          <SheetContent className="text-white w-full h-screen flex flex-col justify-center items-center">
             <div className="flex flex-col h-auto w-auto justify-center items-center">
               <div className="h-auto flex flex-col gap-4 w-auto my-auto text-center font-inter text-2xl leading-loose tracking-wider font-medium">
                 <Link href="/" className="h-14 flex flex-col justify-center">HOME</Link>

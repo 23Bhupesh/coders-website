@@ -22,17 +22,19 @@ const Footer = () => {
       {/*let's chat*/}
 
       <div className="flex md:my-12 lg:my-12 my-5">
-        <p className="mx-auto font-inter font-semibold md:text-9xl lg:text-9xl text-6xl p-2">
-          Let&apos;s Chat
+        <p className="mx-auto text-center font-inter font-bold md:text-8xl lg:text-8xl text-4xl p-2">
+          Let&apos;s Connect
         </p>
       </div>
 
       {/* contact us */}
 
-      <div className="flex my-10">
-        <button className="mx-auto border-2 rounded-full h-14 w-44 border-[#9747FF] font-inter font-normal text-base text-[#9747FF]">
-          CONTACT US
-        </button>
+      <div>
+        <Link href="mailto:coders.club@dypiemr.ac.in" className="flex my-10">
+          <button className="mx-auto border-2 rounded-full lg:h-14 md:h-14 lg:w-44 md:w-44 h-10 w-32 border-[#9747FF] font-inter font-normal text-base text-[#9747FF]">
+            CONTACT US
+          </button>
+        </Link>
       </div>
 
       {/* side logo */}
@@ -112,7 +114,11 @@ const Footer = () => {
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
-            <Link href="/" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.youtube.com/@codersdyp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src="images/youtube_icon.svg"
                 width={48}
@@ -133,8 +139,7 @@ const Footer = () => {
             D. Y. Patil Educational Complex, Akurdi, Nigdi, Pimpri-Chinchwad,
             Maharashtra ,411035
           </div>
-          <div className="my-3 w-auto">coders.club@dypiemr.com</div>
-          <div className="mt-2">+91-0000000000</div>
+          <div className="my-3 w-auto">coders.club@dypiemr.ac.in</div>
         </div>
       </div>
       <hr />
