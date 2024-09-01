@@ -125,7 +125,7 @@ export default function Home() {
               <Image
                 height={400}
                 width={600}
-                src="/images/img_group3.png"
+                src="/images/img_group.png"
                 alt=""
                 className="mx-auto"
               />
