@@ -32,11 +32,11 @@ const index = () => {
           <div className="lg:flex md:flex h-auto justify-center gap-7 my-10 items-center lg:mx-0 md:mx-0 mx-2">
             <div className="flex flex-col gap-2 order-1 lg:order-2 md:order-2 lg:my-0 md:my-0 my-5">
               <Image
-                src="images/img_prateek_sir(Megamind).svg"
                 height={320}
                 width={320}
+                src="/images/img_prateek_sir(Megamind).jpg"
                 alt="Prateek Meshram Image"
-                className="lg:h-80 md:h-80 h-56 lg:w-80 md:w-80 w-56 mx-auto"
+                className="lg:h-80 md:h-80 h-56 lg:w-80 md:w-80 w-56 mx-auto rounded-lg"
               />
               <div className="flex flex-col items-center lg:h-4 h-auto">
                 <p className="font-bold text-base my-1">Prateek Meshram</p>
@@ -55,9 +55,9 @@ const index = () => {
               <Image
                 height={256}
                 width={256}
-                src="images/harsh_img.svg"
+                src="/images/img_harsh(Megamind).jpg"
                 alt="Harsh Bhattad Image"
-                className="lg:h-64 md:h-64 h-56 lg:w-64 md:w-64 w-56 mx-auto"
+                className="lg:h-64 md:h-64 h-56 lg:w-64 md:w-64 w-56 mx-auto rounded-md"
               />
               <div className="flex flex-col items-center lg:h-4 h-auto">
                 <p className="font-bold text-base my-1">Harsh Bhattad</p>
@@ -74,11 +74,11 @@ const index = () => {
             </div>
             <div className="flex flex-col gap-2 order-3 lg:my-0 md:my-0 my-5">
               <Image
-                src="images/devarshi_img.svg"
+                src="/images/img_devarshi(Megamind).jpg"
                 height={256}
                 width={256}
                 alt="Devarshi Mahajan Image"
-                className="lg:h-64 md:h-64 h-56 lg:w-64 md:w-64 w-56 mx-auto"
+                className="lg:h-64 md:h-64 h-56 lg:w-64 md:w-64 w-56 mx-auto rounded-md"
               />
               <div className="flex flex-col items-center lg:h-4 lg-auto">
                 <p className="font-bold text-base my-1">Devarshi Mahajan</p>

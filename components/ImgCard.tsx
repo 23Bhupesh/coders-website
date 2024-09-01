@@ -13,7 +13,7 @@ const ImgCard: React.FC<ImgCardProps> = (props) => {
   return (
     <div className="flex flex-col lg:h-64 md:h-64 h-auto lg:w-48 md:w-48 w-40 gap-2 text-white">
       <div className="relative">
-        <Image src={props.img} width={200} height={200} alt="" className="rounded-2" />
+        <Image src={props.img} width={200} height={200} alt="" className="rounded-md" />
         <Link
           href={props.linkedin}
           target="_blank"
