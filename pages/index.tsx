@@ -90,7 +90,7 @@ export default function Home() {
                 className="h-12 w-12 hover:cursor-pointer border-[1.4px] border-[#E8E7EA] rounded-full"
               />
             </Link>
-            <Link href="https://discord.com/invite/h9aQTY7V" target="_blank" rel="noopener noreferrer">
+            <Link href="https://discord.gg/JRG5crx6m4" target="_blank" rel="noopener noreferrer">
             <Image
               src="images/discord_icon.svg"
               width={48}
