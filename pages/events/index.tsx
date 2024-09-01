@@ -1,6 +1,7 @@
 import EventCarousel from "@/components/EventCarousel";
 import Navbar from "@/components/Navbar";
 import RecentEvent from "@/components/RecentEvent";
+import DataEvents from "../../public/DataEvents";
 import Image from "next/image";
 import React from "react";
 
@@ -29,10 +30,21 @@ const index = () => {
               OUR EVENTS
             </h1>
           </div>
+          <div>
+          {DataEvents.map((event: any, index: number) => (
+              <RecentEvent
+                key={index}
+                eventImage={event.eventImage}
+                eventName={event.eventName}
+                eventDate={event.eventDate}
+                eventDescription={event.eventDescription}
+              />
+            ))}
+          </div>
+          {/* <RecentEvent />
           <RecentEvent />
           <RecentEvent />
-          <RecentEvent />
-          <RecentEvent />
+          <RecentEvent /> */}
         </div>
         {/* More events */}
         <div>
