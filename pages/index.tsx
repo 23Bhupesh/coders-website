@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import GalleryImage from "@/components/GalleryImage";
+import DataEvents from "../public/DataEvents";
 import {
   imagesColumn1,
   imagesColumn2,
@@ -161,8 +162,17 @@ export default function Home() {
           <h1 className="mx-auto mb-20 mt-5 h-9 w-auto font-inter font-bold text-4xl text-center tracking-wider">
             RECENT EVENTS
           </h1>
-          {/* <RecentEvent />
-          <RecentEvent /> */}
+          <div>
+          {DataEvents.slice(0, 2).map((event: any, index: number) => (
+              <RecentEvent
+                key={index}
+                eventImage={event.eventImage}
+                eventName={event.eventName}
+                eventDate={event.eventDate}
+                eventDescription={event.eventDescription}
+              />
+            ))}
+          </div>
           <div className="flex px-5">
             <Link href="/events" className="lg:w-auto md:w-auto w-full mx-auto">
               <button className="mx-auto border-2 h-10 lg:w-32 md:w-32 w-full rounded-md font-lemonmilk font-normal text-base">

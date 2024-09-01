@@ -41,10 +41,6 @@ const index = () => {
               />
             ))}
           </div>
-          {/* <RecentEvent />
-          <RecentEvent />
-          <RecentEvent />
-          <RecentEvent /> */}
         </div>
         {/* More events */}
         <div>
