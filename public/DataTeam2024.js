@@ -300,7 +300,7 @@ const DataTeam2024 = [
         linkedin:""
     },
     {
-        img: "/images/24_img_srushtiwarade.jpg",
+        img: "/images/24_img_srushtiWarade.jpg",
         name: "shrushti Warade",
         domain: "Club Member",
         linkedin:""

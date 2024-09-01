@@ -109,7 +109,7 @@ const DataTeam2023 = [
         linkedin:"https://www.linkedin.com/in/adwaiy-pillai-302704302/"
     }, 
     {
-        img: "/images/23_img_raghavTandulkar.jpg",
+        img: "/images/23_img_RaghavTandulkar.jpg",
         name: "raghav tandulkar",
         domain: "web developer",
         linkedin:"https://www.linkedin.com/in/raghavv27/"
