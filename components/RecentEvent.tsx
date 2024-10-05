@@ -24,7 +24,7 @@ const RecentEvent: React.FC<RecentEventProps> = (props) =>{
             <h1 className="font-bold lg:text-4xl text-2xl tracking-wide font-halfmoon lg:mt-0 md:mt-0 mt-2">{props.eventName}</h1>
             <p className="lg:font-bold font-normal text-base mb-2">{props.eventDate}</p>
           </div>
-          <p className="font-semibold lg:text-xl text-base text-justify font-moshitomono">
+          <p className="font-semibold lg:text-lg text-base text-justify font-moshitomono lg:leading-6">
             {props.eventDescription}
           </p>
         </div>

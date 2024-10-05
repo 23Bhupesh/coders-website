@@ -47,7 +47,7 @@ const index = () => {
           <EventCarousel />
         </div>
         {/* statement */}
-        <div className="w-full h-auto flex items-center">
+        <div className="w-full h-auto flex items-center mt-14">
           <p className="w-auto mx-auto font-lemonmilk font-bold text-xl text-center tracking-normal">
             “One of my most productive days was throwing away 1000 lines of
             code”

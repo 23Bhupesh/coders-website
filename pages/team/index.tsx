@@ -9,7 +9,7 @@ import Navbar from "@/components/Navbar";
 
 const index = () => {
   return (
-    <div>
+    <div className="bg-custom-bg">
       <Navbar />
       <div className="font-lemonmilk text-white pt-20">
         {/* headline div */}

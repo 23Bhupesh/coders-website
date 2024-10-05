@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-custom-bg bg-center bg-cover">
       <Navbar />
       <div className="text-white pt-20 overflow-hidden">
         <div className="lg:h-screen md:h-screen h-auto w-full flex flex-col justify-center items-center lg:mt-0 md:mt-0 mt-20">
@@ -28,7 +28,7 @@ export default function Home() {
             We&apos;re Student&apos;s welface club.
           </h1>
 
-          <div className="flex lg:gap-4 md:gap-4 gap-2 lg:my-0 md:my-0 my-4 lg:mx-0 md:mx-0 mx-auto">
+          <div className="flex lg:gap-4 md:gap-4 gap-2 lg:my-0 md:my-0 my-4 lg:mx-0 md:mx-0 mx-auto lg:px-0 md:px-0 px-5">
             <Link
               href="https://www.instagram.com/coders.dyp/"
               target="_blank"
@@ -42,15 +42,6 @@ export default function Home() {
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
-            {/* <Link href="/" target="_blank" rel="noopener noreferrer">
-            <Image
-              src="images/twitter_icon.svg"
-              width={48}
-              height={48}
-              alt=""
-              className="h-12 w-12 hover:cursor-pointer"
-            />
-          </Link> */}
             <Link
               href="https://www.linkedin.com/company/codersdyp/"
               target="_blank"
@@ -77,6 +68,15 @@ export default function Home() {
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
+            <Link href="/" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="images/twitter_icon.svg"
+              width={48}
+              height={48}
+              alt=""
+              className="h-12 w-12 hover:cursor-pointer"
+            />
+          </Link>
             <Link
               href="https://www.youtube.com/@codersdyp"
               target="_blank"
@@ -87,7 +87,7 @@ export default function Home() {
                 width={48}
                 height={48}
                 alt=""
-                className="h-12 w-12 hover:cursor-pointer border-[1.4px] border-[#E8E7EA] rounded-full"
+                className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
             <Link href="https://discord.gg/JRG5crx6m4" target="_blank" rel="noopener noreferrer">
@@ -188,20 +188,20 @@ export default function Home() {
             GALLERY
           </h1>
 
-          <div className="w-full flex flex-row items-center lg:mx-0 md:mx-0 mx-auto justify-evenly overflow-hidden h-screen px-5">
+          <div className="w-full flex flex-row items-center lg:mx-0 md:mx-0 mx-auto justify-evenly overflow-hidden h-auto px-5">
               <GalleryImage
                 images={imagesColumn1}
-                animation="animate-scrollTopBottom"
+                animation=""
               />
             <GalleryImage
               images={imagesColumn2}
               reverse
-              animation="animate-scrollBottomTop"
+              animation=""
             />
             <div className="lg:block md:block hidden">
               <GalleryImage
                 images={imagesColumn3}
-                animation="animate-scrollTopBottom"
+                animation=""
               />
             </div>
           </div>

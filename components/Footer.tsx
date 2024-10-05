@@ -85,9 +85,6 @@ const Footer = () => {
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
-            {/* <Link href="/" target="_blank" rel="noopener noreferrer">
-              <Image src="images/twitter_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
-            </Link> */}
             <Link
               href="https://www.linkedin.com/company/codersdyp/"
               target="_blank"
@@ -114,6 +111,15 @@ const Footer = () => {
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
+            <Link href="/" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="images/twitter_icon.svg"
+                width={48}
+                height={48}
+                alt=""
+                className="h-12 w-12 hover:cursor-pointer"
+              />
+            </Link>
             <Link
               href="https://www.youtube.com/@codersdyp"
               target="_blank"
@@ -124,11 +130,21 @@ const Footer = () => {
                 width={48}
                 height={48}
                 alt=""
-                className="h-12 w-12 hover:cursor-pointer border-[1.4px] border-[#E8E7EA] rounded-full"
+                className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
-            <Link href="https://discord.gg/JRG5crx6m4" target="_blank" rel="noopener noreferrer">
-              <Image src="images/discord_icon.svg" width={48} height={48} alt="" className="h-12 w-12 hover:cursor-pointer" />
+            <Link
+              href="https://discord.gg/JRG5crx6m4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="images/discord_icon.svg"
+                width={48}
+                height={48}
+                alt=""
+                className="h-12 w-12 hover:cursor-pointer"
+              />
             </Link>
           </div>
         </div>
