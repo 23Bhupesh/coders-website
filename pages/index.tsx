@@ -12,6 +12,7 @@ import MarqueeComponent_1 from "@/components/MarqueeComponent_1";
 import RecentEvent from "@/components/RecentEvent";
 import MarqueeComponent_2 from "@/components/MarqueeComponent_2";
 import Navbar from "@/components/Navbar";
+import Gallery from "@/components/Gallery";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -184,11 +185,11 @@ export default function Home() {
 
         {/* Gallery */}
         <div>
-          <h1 className="mx-auto my-20 h-9 w-auto font-roboto font-bold text-4xl text-center tracking-wider">
+          <h1 className="mx-auto mt-20 mb-10 h-9 w-auto font-roboto font-bold text-4xl text-center tracking-wider">
             GALLERY
           </h1>
 
-          <div className="w-full flex flex-row items-center lg:mx-0 md:mx-0 mx-auto justify-evenly overflow-hidden h-auto px-5">
+          {/* <div className="w-full flex flex-row items-center lg:mx-0 md:mx-0 mx-auto justify-evenly overflow-hidden h-auto px-5">
               <GalleryImage
                 images={imagesColumn1}
                 animation=""
@@ -204,8 +205,13 @@ export default function Home() {
                 animation=""
               />
             </div>
-          </div>
+          </div> */}
         </div>
+
+        {/* Gallery */}
+        <div className="h-screen">
+          <Gallery/>
+        </div>  
       </div>
     </div>
   );
