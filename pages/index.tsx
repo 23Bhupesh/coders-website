@@ -1,13 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-// import GalleryImage from "@/components/GalleryImage";
 import DataEvents from "../public/DataEvents";
-// import {
-//   imagesColumn1,
-//   imagesColumn2,
-//   imagesColumn3,
-// } from "../public/DataGalleryImage";
 import MarqueeComponent_1 from "@/components/MarqueeComponent_1";
 import RecentEvent from "@/components/RecentEvent";
 import MarqueeComponent_2 from "@/components/MarqueeComponent_2";
@@ -22,6 +16,7 @@ export default function Home() {
     <div className="bg-custom-bg bg-center bg-cover">
       <Navbar />
       <div className="text-white pt-20 overflow-hidden">
+        {/* Hero Section */}
         <div className="lg:h-screen md:h-screen h-auto w-full flex flex-col justify-center items-center lg:mt-0 md:mt-0 mt-20">
           <p className="lg:w-[67%] md:w-[67%] w-[91%] lg:h-6 md:h-6 h-auto font-inter font-medium lg:text-xl md:text-xl text-lg flex flex-col text-left lg:px-0 md:px-0 px-2 mb-0 text-[#909090]">
             Hello people!
@@ -119,7 +114,7 @@ export default function Home() {
 
         {/* recent Events */}
         <div className="h-auto w-full">
-          <h1 className="mx-auto mb-20 mt-5 h-9 w-auto font-lemonmilk font-bold text-5xl text-center tracking-wider">
+          <h1 className="mx-auto mb-20 mt-5 h-9 w-auto font-lemonmilk font-bold lg:text-5xl md:text-5xl text-3xl text-center tracking-wider">
             RECENT EVENTS
           </h1>
           <div>
@@ -142,35 +137,15 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Gallery */}
+        {/* Cherished Glimpses */}
         <div>
-          <h1 className="mx-auto mt-20 mb-16 h-9 w-auto font-lemonmilk font-bold text-5xl text-center tracking-wider">
+          <h1 className="mx-auto mt-20 mb-16 h-9 w-auto font-lemonmilk font-bold lg:text-5xl md:text-5xl text-3xl text-center tracking-wider">
             Cherished Glimpses
           </h1>
-
-          {/* <div className="w-full flex flex-row items-center lg:mx-0 md:mx-0 mx-auto justify-evenly overflow-hidden h-auto px-5">
-              <GalleryImage
-                images={imagesColumn1}
-                animation=""
-              />
-            <GalleryImage
-              images={imagesColumn2}
-              reverse
-              animation=""
-            />
-            <div className="lg:block md:block hidden">
-              <GalleryImage
-                images={imagesColumn3}
-                animation=""
-              />
-            </div>
-          </div> */}
+          <div className="h-screen">
+            <Gallery/>
+          </div>  
         </div>
-
-        {/* Gallery */}
-        <div className="h-screen">
-          <Gallery/>
-        </div>  
       </div>
     </div>
   );

@@ -41,29 +41,3 @@
 .custom-disc-color li::marker {
   color: #FF7E21;
 }
-
-@keyframes scrollTopBottom {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-50%);
-  }
-}
-
-@keyframes scrollBottomTop {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(50%);
-  }
-}
-
-.animate-scrollTopBottom {
-  animation: scrollTopBottom 5s linear infinite;
-}
-
-.animate-scrollBottomTop {
-  animation: scrollBottomTop 5s linear infinite;
-}
