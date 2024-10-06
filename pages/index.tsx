@@ -142,7 +142,7 @@ export default function Home() {
           <h1 className="mx-auto mt-20 mb-16 h-9 w-auto font-lemonmilk font-bold lg:text-5xl md:text-5xl text-3xl text-center tracking-wider">
             Cherished Glimpses
           </h1>
-          <div className="h-screen">
+          <div className="">
             <Gallery/>
           </div>  
         </div>
