@@ -28,7 +28,7 @@ const index = () => {
                   name=""
                   id=""
                   placeholder="Email address"
-                  className="lg:w-96 md:w-80 w-64 lg:mx-0 md:mx-0 mx-auto h-6 border-b-2 bg-transparent text-white"
+                  className="lg:w-96 md:w-80 w-64 lg:mx-0 md:mx-0 mx-auto h-6 border-b-2 bg-transparent text-white focus:outline-0"
                 ></input>
               </form>
             </div>
