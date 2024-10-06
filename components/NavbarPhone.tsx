@@ -4,9 +4,6 @@ import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
-  const clicked = () => { 
-    console.log("clicked");
-  }
   
   return (
     <div className="text-white w-full fixed z-50 h-20 flex justify-between px-10 bg-custom-bg bg-cover bg-center bg-no-repeat bg-[#000000]">
@@ -18,8 +15,6 @@ const Navbar = () => {
           <p className="font-inter text-xs font-medium">CODERS.DYP</p>
         </div>
       </div>
-      <button onClick={clicked}>click</button>
-
       <div className="w-96 my-auto">
         <ul className="flex justify-between font-inter font-medium text-base">
           <Link href="/">

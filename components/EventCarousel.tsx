@@ -3,7 +3,6 @@ import Marquee from "react-fast-marquee";
 import DataCarouselImg from "../public/DataCarouselImg.js";
 
 const EventCarousel = () => {
-  console.log(DataCarouselImg)
   return (
     <div className="w-[100%] h-auto bg-[#ffffff] flex">
       <Marquee gradient={false} speed={200} pauseOnHover={true} className="flex items-center h-[100%]">
