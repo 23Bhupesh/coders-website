@@ -27,7 +27,7 @@ const index = () => {
         </div> */}
           <div className="w-full h-auto">
             <h1 className="mx-auto my-10 mb-10 h-9 w-auto font-lemonmilk font-bold lg:text-5xl md:text-4xl text-2xl text-center tracking-wider">
-              EVENTS DONE
+              EVENTS
             </h1>
           </div>
           <div>

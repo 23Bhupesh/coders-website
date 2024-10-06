@@ -43,12 +43,29 @@ const Navbar = () => {
           <SheetContent className="text-white w-full h-screen flex flex-col justify-center items-center">
             <div className="flex flex-col h-auto w-auto justify-center items-center">
               <div className="h-auto flex flex-col gap-4 w-auto my-auto text-center font-inter text-2xl leading-loose tracking-wider font-medium">
-                <Link href="/" className="h-14 flex flex-col justify-center">HOME</Link>
-                <Link href="/team" className="h-14 flex flex-col justify-center">TEAM</Link>
-                <Link href="/events" className="h-14 flex flex-col justify-center">EVENTS</Link>
-                <Link href="/newsletter" className="h-14 flex flex-col justify-center">NEWSLETTER</Link>
+                <Link href="/" className="h-14 flex flex-col justify-center">
+                  HOME
+                </Link>
+                <Link
+                  href="/team"
+                  className="h-14 flex flex-col justify-center"
+                >
+                  TEAM
+                </Link>
+                <Link
+                  href="/events"
+                  className="h-14 flex flex-col justify-center"
+                >
+                  EVENTS
+                </Link>
+                <Link
+                  href="/newsletter"
+                  className="h-14 flex flex-col justify-center"
+                >
+                  NEWSLETTER
+                </Link>
               </div>
-              <div className="w-auto mx-auto lg:mx-0 md:mx-0 flex gap-4 mb-4 fixed bottom-10">
+              <div className="w-auto mx-auto lg:mx-0 md:mx-0 flex gap-4 mb-4 fixed bottom-20">
                 <Link
                   href="https://www.instagram.com/coders.dyp/"
                   target="_blank"
@@ -88,13 +105,39 @@ const Navbar = () => {
                     className="h-10 w-10 hover:cursor-pointer"
                   />
                 </Link>
+                <Link
+                  href="https://x.com/Codersdyp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="images/twitter_icon.svg"
+                    width={48}
+                    height={48}
+                    alt="Twitter"
+                    className="h-10 w-10 hover:cursor-pointer"
+                  />
+                </Link>
                 <Link href="/" target="_blank" rel="noopener noreferrer">
                   <Image
                     src="images/youtube_icon.svg"
                     width={48}
                     height={48}
                     alt=""
-                    className="h-10 w-10 hover:cursor-pointer border-[1.4px] border-[#E8E7EA] rounded-full"
+                    className="h-10 w-10 hover:cursor-pointer"
+                  />
+                </Link>
+                <Link
+                  href="https://discord.gg/JRG5crx6m4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="images/discord_icon.svg"
+                    width={48}
+                    height={48}
+                    alt="Discord"
+                    className="h-10 w-10 hover:cursor-pointer"
                   />
                 </Link>
               </div>

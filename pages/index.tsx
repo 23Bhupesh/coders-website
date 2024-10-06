@@ -35,7 +35,7 @@ export default function Home() {
                 src="images/instagram_icon.svg"
                 width={48}
                 height={48}
-                alt=""
+                alt="Instagram"
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
@@ -48,7 +48,7 @@ export default function Home() {
                 src="images/linkedin_icon.svg"
                 width={48}
                 height={48}
-                alt=""
+                alt="LinkedIn"
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
@@ -61,16 +61,16 @@ export default function Home() {
                 src="images/whatsapp_icon.svg"
                 width={48}
                 height={48}
-                alt=""
+                alt="WhatsApp"
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
-            <Link href="/" target="_blank" rel="noopener noreferrer">
+            <Link href="https://x.com/Codersdyp" target="_blank" rel="noopener noreferrer">
             <Image
               src="images/twitter_icon.svg"
               width={48}
               height={48}
-              alt=""
+              alt="Twitter"
               className="h-12 w-12 hover:cursor-pointer"
             />
           </Link>
@@ -83,7 +83,7 @@ export default function Home() {
                 src="images/youtube_icon.svg"
                 width={48}
                 height={48}
-                alt=""
+                alt="YouTube"
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
@@ -92,7 +92,7 @@ export default function Home() {
               src="images/discord_icon.svg"
               width={48}
               height={48}
-              alt=""
+              alt="Discord"
               className="h-12 w-12 hover:cursor-pointer"
             />
           </Link>
@@ -114,7 +114,7 @@ export default function Home() {
 
         {/* recent Events */}
         <div className="h-auto w-full">
-          <h1 className="mx-auto mb-20 mt-5 h-9 w-auto font-lemonmilk font-bold lg:text-5xl md:text-5xl text-3xl text-center tracking-wider">
+          <h1 className="mx-auto mb-20 mt-5 h-9 w-auto font-lemonmilk font-bold lg:text-5xl md:text-5xl text-2xl text-center tracking-wider">
             RECENT EVENTS
           </h1>
           <div>
@@ -139,7 +139,7 @@ export default function Home() {
 
         {/* Cherished Glimpses */}
         <div>
-          <h1 className="mx-auto mt-20 mb-16 h-9 w-auto font-lemonmilk font-bold lg:text-5xl md:text-5xl text-3xl text-center tracking-wider">
+          <h1 className="mx-auto mt-20 mb-16 h-9 w-auto font-lemonmilk font-bold lg:text-5xl md:text-5xl text-2xl text-center tracking-wider">
             Cherished Glimpses
           </h1>
           <div className="">

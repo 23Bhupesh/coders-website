@@ -81,7 +81,7 @@ const Footer = () => {
                 src="images/instagram_icon.svg"
                 width={48}
                 height={48}
-                alt=""
+                alt="Instagram"
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
@@ -94,7 +94,7 @@ const Footer = () => {
                 src="images/linkedin_icon.svg"
                 width={48}
                 height={48}
-                alt=""
+                alt="LinkedIn"
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
@@ -107,16 +107,16 @@ const Footer = () => {
                 src="images/whatsapp_icon.svg"
                 width={48}
                 height={48}
-                alt=""
+                alt="WhatsApp"
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
-            <Link href="/" target="_blank" rel="noopener noreferrer">
+            <Link href="https://x.com/Codersdyp" target="_blank" rel="noopener noreferrer">
               <Image
                 src="images/twitter_icon.svg"
                 width={48}
                 height={48}
-                alt=""
+                alt="Twitter"
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
@@ -129,7 +129,7 @@ const Footer = () => {
                 src="images/youtube_icon.svg"
                 width={48}
                 height={48}
-                alt=""
+                alt="Youtube"
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
@@ -142,7 +142,7 @@ const Footer = () => {
                 src="images/discord_icon.svg"
                 width={48}
                 height={48}
-                alt=""
+                alt="Discord"
                 className="h-12 w-12 hover:cursor-pointer"
               />
             </Link>
