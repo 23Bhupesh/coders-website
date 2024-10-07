@@ -30,12 +30,12 @@ const DataEvents = [
         eventDate: "27/10/2023",
         eventDescription: 'A guest lecture titled "Clarity" was held in the Seminar Hall, featuring Mr. Sumit Acharya from SI UK as the distinguished speaker. He shared valuable insights on preparing for a master’s program, addressing key topics such as selecting the right program, navigating the admissions process, and securing financial support, offering clear guidance on the complex journey to advanced studies.',
     }, {
-        eventImage: "/images/event_06-10-23.JPG",
+        eventImage: "/images/event_06-10-23.jpg",
         eventName: "Coders Club Installation",
         eventDate: "06/10/2023",
         eventDescription: "The event marked an exciting milestone as new leaders were welcomed into their roles. It showcased the club's vision for the year, emphasizing collaboration, innovation, and community engagement. Interactive sessions highlighted objectives and upcoming initiatives, inspiring attendees to actively contribute to a vibrant tech community.",
     },{
-        eventImage: "/images/event_13-09-23.jpg",
+        eventImage: "/images/event_13-09-23.JPG",
         eventName: "Click 'A' Pic",
         eventDate: "13/09/2023",
         eventDescription: "The event provided a delightful opportunity for fun and camaraderie among club members and the Board of Directors (BOD). Participants enjoyed a lively atmosphere as they captured memorable moments through group photos and individual snapshots, celebrating the vibrant community. This engaging photo session not only strengthened team bonds but also created lasting memories, showcasing the spirit of collaboration and joy within the club.",
