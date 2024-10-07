@@ -10,7 +10,7 @@ const Gallery = () => {
           <Image height={200} width={300} src="/images/img_gall_col_1_2.png" alt="Event 2" className="m-4 lg:h-56 md:h-40 h-28 w-auto" />
           <Image height={200} width={300} src="/images/img_gall_col_1_3.png" alt="Event 3" className="m-4 lg:h-56 md:h-40 h-28 w-auto" />
           <Image height={200} width={300} src="/images/img_gall_col_1_4.png" alt="Event 4" className="m-4 lg:h-56 md:h-40 h-28 w-auto" />
-          <Image height={200} width={300} src="/images/img_gall_col_1_5.jpg" alt="Event 5" className="m-4 lg:h-56 md:h-40 h-28 w-auto" />
+          <Image height={200} width={300} src="/images/img_gall_col_1_5.JPG" alt="Event 5" className="m-4 lg:h-56 md:h-40 h-28 w-auto" />
         </Marquee>
       </div>
 
@@ -30,7 +30,7 @@ const Gallery = () => {
           <Image height={200} width={300} src="/images/img_gall_col_3_3.png" alt="Event 2" className="m-4 lg:h-56 md:h-40 h-28 w-auto" />
           <Image height={200} width={300} src="/images/img_gall_col_3_4.png" alt="Event 3" className="m-4 lg:h-56 md:h-40 h-28 w-auto" />
           <Image height={200} width={300} src="/images/img_gall_col_3_1.png" alt="Event 4" className="m-4 lg:h-56 md:h-40 h-28 w-auto" />
-          <Image height={200} width={300} src="/images/img_gall_col_3_5.jpg" alt="Event 5" className="m-4 lg:h-56 md:h-40 h-28 w-auto" />
+          <Image height={200} width={300} src="/images/img_gall_col_3_5.JPG" alt="Event 5" className="m-4 lg:h-56 md:h-40 h-28 w-auto" />
           <Image height={200} width={300} src="/images/img_gall_col_3_6.jpeg" alt="Event 6" className="m-4 lg:h-56 md:h-40 h-28 w-auto" />
         </Marquee>
       </div>
