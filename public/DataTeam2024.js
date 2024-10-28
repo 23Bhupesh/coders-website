@@ -32,7 +32,7 @@ const DataTeam2024 = [
     {
         img: "/images/24_img_swapnilBaranwal.jpg",
         name: "swapnil Baranwal",
-        domain: "Jt. Club Abvisor",
+        domain: "Jt. Club Advisor",
         linkedin:"https://www.linkedin.com/in/baranwalswapnil/"
     },
     {
